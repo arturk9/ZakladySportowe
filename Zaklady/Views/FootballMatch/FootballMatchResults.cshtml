@@ -1,0 +1,32 @@
+﻿@model Zaklady.ViewModels.FootballMatchResultsViewModel
+@{
+    ViewBag.Title = "Uzupełnij wyniki meczu";
+}
+<h2>@Model.Heading</h2>
+@using (Html.BeginForm("AddFootballMatchResult", "FootballMatch"))
+{@Html.AntiForgeryToken()
+    @Html.HiddenFor(m => m.id)
+    <form>
+        <div class="form-group">
+            <label for="HomeTeamGoals">Bramki gospodarzy:</label>
+            @Html.TextBoxFor(m => m.HomeTeamGoals, new { @class = "form-control", placeholder = "np. 0" })
+            @Html.ValidationMessageFor(m => m.HomeTeamGoals)
+        </div>
+        <div class="form-group">
+            <label for="AwayTeam">Bramki gości:</label>
+            @Html.TextBoxFor(m => m.AwayTeamGoals, new { @class = "form-control", placeholder = "np. 3" })
+            @Html.ValidationMessageFor(m => m.AwayTeamGoals)
+        </div>
+        <div class="form-group">
+            <label for="Tournament">Punkty za prawidłowy rezultat:</label>
+            @Html.TextBoxFor(m => m.PointsForBetingMatchResult, new { @class = "form-control", placeholder = "np. 1" })
+            @Html.ValidationMessageFor(m => m.PointsForBetingMatchResult)
+        </div>
+        <div class="form-group">
+            <label for="Tournament">Punkty za dokładną liczbę bramek:</label>
+            @Html.TextBoxFor(m => m.PointsForBetingExactTeamScores, new { @class = "form-control", placeholder = "np. 3" })
+            @Html.ValidationMessageFor(m => m.PointsForBetingExactTeamScores)
+        </div>
+        <button type="submit" class="btn btn-primary">Save</button>
+    </form>
+}

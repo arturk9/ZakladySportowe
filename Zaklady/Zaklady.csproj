@@ -9,7 +9,7 @@
     <ProductVersion>
     </ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{E2893C52-331A-48DC-A59F-601950636B4D}</ProjectGuid>
+    <ProjectGuid>{850B1920-79F8-4412-9883-47D2C294E5CD}</ProjectGuid>
     <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
@@ -174,31 +174,15 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201607240907396_InitialModel.cs" />
-    <Compile Include="Migrations\201607240907396_InitialModel.Designer.cs">
-      <DependentUpon>201607240907396_InitialModel.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201607240912059_CreateFootballMatchTable.cs" />
-    <Compile Include="Migrations\201607240912059_CreateFootballMatchTable.Designer.cs">
-      <DependentUpon>201607240912059_CreateFootballMatchTable.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201607240923189_OverridingFootballMatchTable.cs" />
-    <Compile Include="Migrations\201607240923189_OverridingFootballMatchTable.Designer.cs">
-      <DependentUpon>201607240923189_OverridingFootballMatchTable.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201607240948278_FixingFootballMatchModelUser.cs" />
-    <Compile Include="Migrations\201607240948278_FixingFootballMatchModelUser.Designer.cs">
-      <DependentUpon>201607240948278_FixingFootballMatchModelUser.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201607241028102_CreateFootballMatchResultsTable.cs" />
-    <Compile Include="Migrations\201607241028102_CreateFootballMatchResultsTable.Designer.cs">
-      <DependentUpon>201607241028102_CreateFootballMatchResultsTable.cs</DependentUpon>
+    <Compile Include="Migrations\201607241429468_InitialMigration.cs" />
+    <Compile Include="Migrations\201607241429468_InitialMigration.Designer.cs">
+      <DependentUpon>201607241429468_InitialMigration.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\ApplicationDbContext.cs" />
-    <Compile Include="Models\FootballMatch.cs" />
     <Compile Include="Models\ApplicationUser.cs" />
+    <Compile Include="Models\FootballMatch.cs" />
     <Compile Include="Models\FootballMatchResults.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -277,20 +261,8 @@
     <Content Include="Scripts\jquery-1.10.2.min.map" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201607240907396_InitialModel.resx">
-      <DependentUpon>201607240907396_InitialModel.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201607240912059_CreateFootballMatchTable.resx">
-      <DependentUpon>201607240912059_CreateFootballMatchTable.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201607240923189_OverridingFootballMatchTable.resx">
-      <DependentUpon>201607240923189_OverridingFootballMatchTable.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201607240948278_FixingFootballMatchModelUser.resx">
-      <DependentUpon>201607240948278_FixingFootballMatchModelUser.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201607241028102_CreateFootballMatchResultsTable.resx">
-      <DependentUpon>201607241028102_CreateFootballMatchResultsTable.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201607241429468_InitialMigration.resx">
+      <DependentUpon>201607241429468_InitialMigration.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
@@ -309,9 +281,9 @@
         <WebProjectProperties>
           <UseIIS>True</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
-          <DevelopmentServerPort>64935</DevelopmentServerPort>
+          <DevelopmentServerPort>53130</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>http://localhost:64935/</IISUrl>
+          <IISUrl>http://localhost:53130/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>

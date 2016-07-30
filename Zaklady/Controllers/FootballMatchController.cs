@@ -8,6 +8,7 @@ namespace Zaklady.Controllers
 {
     public class FootballMatchController : Controller
     {
+        // GET: FootballMatch
         private readonly ApplicationDbContext _context;
 
         public FootballMatchController()
@@ -40,7 +41,19 @@ namespace Zaklady.Controllers
                 AwayTeam = viewModel.AwayTeam
             };
 
+            var footballMatchResult = new FootballMatchResults
+            {
+                HomeTeamGoals = 0,
+                AwayTeamGoals = 0,
+                PointsForBetingExactTeamScores = 0,
+                PointsForBetingMatchResult = 0,
+                UserId = User.Identity.GetUserId(),
+                HomeTeam = viewModel.HomeTeam,
+                AwayTeam = viewModel.AwayTeam,
+            };
+
             _context.FootballMatches.Add(footballMatch);
+            _context.FootballMatchResult.Add(footballMatchResult);
             _context.SaveChanges();
 
             return RedirectToAction("Index", "Home");

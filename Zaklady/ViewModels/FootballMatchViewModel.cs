@@ -5,8 +5,6 @@ namespace Zaklady.ViewModels
 {
     public class FootballMatchViewModel
     {
-
-
         [Required]
         public string Torunament { get; set; }
 

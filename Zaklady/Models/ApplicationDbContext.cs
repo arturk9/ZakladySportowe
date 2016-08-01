@@ -6,7 +6,7 @@ namespace Zaklady.Models
     public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
     {
         public DbSet<FootballMatch> FootballMatches { get; set; }
-        public DbSet<FootballMatchResults> FootballMatchResult { get; set; }
+        public DbSet<Bet> Bets { get; set; }
 
         public ApplicationDbContext()
             : base("DefaultConnection", throwIfV1Schema: false)

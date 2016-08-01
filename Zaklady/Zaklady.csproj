@@ -178,16 +178,40 @@
     <Compile Include="Migrations\201607241429468_InitialMigration.Designer.cs">
       <DependentUpon>201607241429468_InitialMigration.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201607301847140_ExtendingModel.cs" />
+    <Compile Include="Migrations\201607301847140_ExtendingModel.Designer.cs">
+      <DependentUpon>201607301847140_ExtendingModel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201607301854359_AddigBet.cs" />
+    <Compile Include="Migrations\201607301854359_AddigBet.Designer.cs">
+      <DependentUpon>201607301854359_AddigBet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201607302043242_FixingMatchResultsTable.cs" />
+    <Compile Include="Migrations\201607302043242_FixingMatchResultsTable.Designer.cs">
+      <DependentUpon>201607302043242_FixingMatchResultsTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201607310816116_FixingMatchResultsId.cs" />
+    <Compile Include="Migrations\201607310816116_FixingMatchResultsId.Designer.cs">
+      <DependentUpon>201607310816116_FixingMatchResultsId.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201607310822529_FixingMatchResultsId1.cs" />
+    <Compile Include="Migrations\201607310822529_FixingMatchResultsId1.Designer.cs">
+      <DependentUpon>201607310822529_FixingMatchResultsId1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201608011615036_FixingModels.cs" />
+    <Compile Include="Migrations\201608011615036_FixingModels.Designer.cs">
+      <DependentUpon>201608011615036_FixingModels.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\ApplicationDbContext.cs" />
     <Compile Include="Models\ApplicationUser.cs" />
+    <Compile Include="Models\Bet.cs" />
     <Compile Include="Models\FootballMatch.cs" />
-    <Compile Include="Models\FootballMatchResults.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
-    <Compile Include="ViewModels\FootballMatchResultsViewModel.cs" />
+    <Compile Include="ViewModels\BetViewModel.cs" />
     <Compile Include="ViewModels\FootballMatchViewModel.cs" />
     <Compile Include="ViewModels\ValidTimeAttribute.cs" />
   </ItemGroup>
@@ -263,6 +287,24 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201607241429468_InitialMigration.resx">
       <DependentUpon>201607241429468_InitialMigration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201607301847140_ExtendingModel.resx">
+      <DependentUpon>201607301847140_ExtendingModel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201607301854359_AddigBet.resx">
+      <DependentUpon>201607301854359_AddigBet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201607302043242_FixingMatchResultsTable.resx">
+      <DependentUpon>201607302043242_FixingMatchResultsTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201607310816116_FixingMatchResultsId.resx">
+      <DependentUpon>201607310816116_FixingMatchResultsId.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201607310822529_FixingMatchResultsId1.resx">
+      <DependentUpon>201607310822529_FixingMatchResultsId1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201608011615036_FixingModels.resx">
+      <DependentUpon>201608011615036_FixingModels.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

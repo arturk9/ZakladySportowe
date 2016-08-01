@@ -1,0 +1,21 @@
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace Zaklady.Models
+{
+    public class Bet
+    {
+        public int BetId { get; set; }
+
+        [Required]
+        public int MatchId { get; set; }
+
+        [Required]
+        public string UserId { get; set; }
+
+        [Required]
+        public int HomeTeamBetGoals { get; set; }
+
+        [Required]
+        public int AwayTeamBetGoals { get; set; }
+    }
+}

@@ -23,5 +23,17 @@ namespace Zaklady.Models
 
         [Required]
         public DateTime DateTime { get; set; }
+
+        [Required]
+        public int HomeTeamGoals { get; set; }
+
+        [Required]
+        public int AwayTeamGoals { get; set; }
+
+        [Required]
+        public int PointsForBetingExactTeamScores { get; set; }
+
+        [Required]
+        public int PointsForBetingMatchResult { get; set; }
     }
 }

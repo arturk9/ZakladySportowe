@@ -41,19 +41,7 @@ namespace Zaklady.Controllers
                 AwayTeam = viewModel.AwayTeam
             };
 
-            var footballMatchResult = new FootballMatchResults
-            {
-                HomeTeamGoals = 0,
-                AwayTeamGoals = 0,
-                PointsForBetingExactTeamScores = 0,
-                PointsForBetingMatchResult = 0,
-                UserId = User.Identity.GetUserId(),
-                HomeTeam = viewModel.HomeTeam,
-                AwayTeam = viewModel.AwayTeam,
-            };
-
             _context.FootballMatches.Add(footballMatch);
-            _context.FootballMatchResult.Add(footballMatchResult);
             _context.SaveChanges();
 
             return RedirectToAction("Index", "Home");
@@ -108,36 +96,37 @@ namespace Zaklady.Controllers
             return RedirectToAction("Index", "Home");
         }
 
-        public ActionResult AddFootballMatchResult(FootballMatchResultsViewModel viewModel)
+        public ActionResult AddFootballMatchResult(FootballMatchViewModel viewModel)
         {
-            if (!ModelState.IsValid)
+            /*if (!ModelState.IsValid)
             {
                 return View("FootballMatchResults", viewModel);
-            }
+            }*/
 
             var footballMatch = _context.FootballMatches.Single(g => g.Id == viewModel.id);
-            var footballMatchResults = new FootballMatchResults
-            {
-                HomeTeam = footballMatch.HomeTeam,
-                AwayTeam = footballMatch.AwayTeam,
-                UserId = User.Identity.GetUserId(),
-                HomeTeamGoals = viewModel.HomeTeamGoals,
-                AwayTeamGoals = viewModel.AwayTeamGoals,
-                PointsForBetingExactTeamScores = viewModel.PointsForBetingExactTeamScores,
-                PointsForBetingMatchResult = viewModel.PointsForBetingMatchResult
-            };
+            footballMatch.HomeTeamGoals = viewModel.HomeTeamGoals;
+            footballMatch.AwayTeamGoals = viewModel.AwayTeamGoals;
+            footballMatch.PointsForBetingExactTeamScores = viewModel.PointsForBetingExactTeamScores;
+            footballMatch.PointsForBetingMatchResult = viewModel.PointsForBetingMatchResult;
 
-            _context.FootballMatchResult.Add(footballMatchResults);
             _context.SaveChanges();
 
             return RedirectToAction("Index", "Home");
-
         }
 
         [Authorize]
-        public ActionResult FillFootballMatchResult()
+        public ActionResult FillFootballMatchResult(int id)
         {
-            var viewModel = new FootballMatchResultsViewModel { Heading = "Uzupełnij wynik meczu" };
+            var footballMatch = _context.FootballMatches.Single(g => g.Id == id);
+            var viewModel = new FootballMatchViewModel {
+                Heading = "Uzupełnij wynik meczu",
+                HomeTeam = footballMatch.HomeTeam,
+                AwayTeam = footballMatch.AwayTeam,
+                HomeTeamGoals = footballMatch.HomeTeamGoals,
+                AwayTeamGoals = footballMatch.AwayTeamGoals,
+                PointsForBetingExactTeamScores = footballMatch.PointsForBetingExactTeamScores,
+                PointsForBetingMatchResult = footballMatch.PointsForBetingMatchResult
+            };
             return View("FootballMatchResults", viewModel);
         }
     }

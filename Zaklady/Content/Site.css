@@ -75,6 +75,14 @@ list-style: none;
     font-weight: normal;
 }
 
+.footballmatch > li .details .button 
+{
+    position:absolute;
+    top:12px;
+    left: 250px;
+    display: block;
+}
+
 .footballmatch > li .actions 
 {
     font-size: 12px;

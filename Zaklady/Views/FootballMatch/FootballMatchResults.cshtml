@@ -8,15 +8,15 @@
     @Html.HiddenFor(m => m.id)
     <form>
         <div class="form-group">
-            <label for="HomeTeamGoals">@Html.LabelFor(m=> m.HomeTeam):</label>
+            <b>@Model.HomeTeam:</b>
             @Html.TextBoxFor(m => m.HomeTeamGoals, new { @class = "form-control", placeholder = "np. 0" })
             @Html.ValidationMessageFor(m => m.HomeTeamGoals)
         </div>
         <div class="form-group">
-            <label for="AwayTeam">@Html.LabelFor(m => m.AwayTeam):</label>
+            <b>@Model.AwayTeam:</b>
             @Html.TextBoxFor(m => m.AwayTeamGoals, new { @class = "form-control", placeholder = "np. 3" })
             @Html.ValidationMessageFor(m => m.AwayTeamGoals)
-        </div>
+</div>
         <div class="form-group">
             <label for="Tournament">Punkty za prawidłowy rezultat:</label>
             @Html.TextBoxFor(m => m.PointsForBetingMatchResult, new { @class = "form-control", placeholder = "np. 1" })

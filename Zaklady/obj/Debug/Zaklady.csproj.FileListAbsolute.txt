@@ -146,3 +146,4 @@ D:\Zaklady - RAW - Kopia\Zaklady\Zaklady\obj\Debug\Zaklady.Migrations.FixingMatc
 D:\Zaklady - RAW - Kopia\Zaklady\Zaklady\obj\Debug\Zaklady.Migrations.FixingMatchResultsId.resources
 D:\Zaklady - RAW - Kopia\Zaklady\Zaklady\obj\Debug\Zaklady.Migrations.FixingMatchResultsId1.resources
 D:\Zaklady - RAW - Kopia\Zaklady\Zaklady\obj\Debug\Zaklady.Migrations.FixingModels.resources
+D:\Zaklady - RAW - Kopia\Zaklady\Zaklady\obj\Debug\Zaklady.Migrations.AddingBet.resources

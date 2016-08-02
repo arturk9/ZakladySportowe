@@ -4,6 +4,7 @@ namespace Zaklady.Models
 {
     public class Bet
     {
+        [Key]
         public int BetId { get; set; }
 
         [Required]

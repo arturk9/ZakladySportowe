@@ -202,6 +202,10 @@
     <Compile Include="Migrations\201608011615036_FixingModels.Designer.cs">
       <DependentUpon>201608011615036_FixingModels.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201608021736236_AddingBet.cs" />
+    <Compile Include="Migrations\201608021736236_AddingBet.Designer.cs">
+      <DependentUpon>201608021736236_AddingBet.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\ApplicationDbContext.cs" />
@@ -272,9 +276,12 @@
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
     <Content Include="Views\FootballMatch\FootballMatchForm.cshtml" />
     <Content Include="Views\FootballMatch\FootballMatchResults.cshtml" />
+    <Content Include="Views\FootballMatch\MyBets.cshtml" />
+    <Content Include="Views\FootballMatch\AddBet.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Views\Rankings\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
@@ -305,6 +312,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201608011615036_FixingModels.resx">
       <DependentUpon>201608011615036_FixingModels.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201608021736236_AddingBet.resx">
+      <DependentUpon>201608021736236_AddingBet.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

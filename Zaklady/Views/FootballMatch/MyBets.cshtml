@@ -1,5 +1,5 @@
 ﻿
-@model IEnumerable<Zaklady.Models.FootballMatch>
+@model IEnumerable<Zaklady.Models.Bet>
 @{
     ViewBag.Title = "Home Page";
 }
@@ -7,31 +7,10 @@
     @foreach (var footballMatch in Model)
     {
         <li>
-            <div class="date">
-                <div class="month">
-                    @footballMatch.DateTime.ToString("MMM")
-                </div>
-                <div class="day">
-                    @footballMatch.DateTime.ToString("d ")
-                </div>
-            </div>
-            <div class="details">
-                <span class="hometeam">
-                    @footballMatch.HomeTeam
-                </span>
-                vs.
-                <span class="genre">
-                    @footballMatch.AwayTeam
-                </span>
-                <span class="hour">
-                    @footballMatch.DateTime.ToString("HH:mm")
-                </span>
-                <span class="tournament">
-                    @footballMatch.Torunament
-                </span>
-                <span class="button">
-                    <button class="btn btn-primary btn-sm" onclick="location.href='@Url.Action("MyBets", "Bet")'">Obstaw</button>
-                </span>
+            <div>
+                    @footballMatch.BetId
+                    @footballMatch.HomeTeamBetGoals
+                    @footballMatch.AwayTeamBetGoals
             </div>
         </li>
     }

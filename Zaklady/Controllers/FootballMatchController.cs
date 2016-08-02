@@ -162,5 +162,14 @@ namespace Zaklady.Controllers
 
             return RedirectToAction("Index", "Home");
         }
+
+        [Authorize]
+        public ActionResult MyBets()
+        {
+            var userId = User.Identity.GetUserId();
+            var bets = _context.Bets.Where(g => g.UserId == userId).ToList();
+            return View(bets);
+
+        }
     }
 }

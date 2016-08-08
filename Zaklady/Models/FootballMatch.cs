@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 
 namespace Zaklady.Models
@@ -35,5 +36,7 @@ namespace Zaklady.Models
 
         [Required]
         public int PointsForBetingMatchResult { get; set; }
+
+        public virtual ICollection<Bet> Bets { get; set; }
     }
 }

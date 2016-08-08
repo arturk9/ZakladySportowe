@@ -7,8 +7,8 @@ namespace Zaklady.ViewModels
        
         public int BetId { get; set; }
 
-        
-        public int MatchId { get; set; }
+
+        public int MatchId;
 
      
         public string UserId { get; set; }

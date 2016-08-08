@@ -18,5 +18,9 @@ namespace Zaklady.Models
 
         [Required]
         public int AwayTeamBetGoals { get; set; }
+
+        public int Points { get; set; }
+
+        public virtual FootballMatch FootballMatch { get; set; }
     }
 }

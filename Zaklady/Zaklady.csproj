@@ -168,6 +168,7 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\BetController.cs" />
     <Compile Include="Controllers\FootballMatchController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
@@ -206,6 +207,14 @@
     <Compile Include="Migrations\201608021736236_AddingBet.Designer.cs">
       <DependentUpon>201608021736236_AddingBet.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201608071805187_BuildingOneToManyRelation.cs" />
+    <Compile Include="Migrations\201608071805187_BuildingOneToManyRelation.Designer.cs">
+      <DependentUpon>201608071805187_BuildingOneToManyRelation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201608081837290_AddingPointsToBetModel.cs" />
+    <Compile Include="Migrations\201608081837290_AddingPointsToBetModel.Designer.cs">
+      <DependentUpon>201608081837290_AddingPointsToBetModel.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\ApplicationDbContext.cs" />
@@ -228,6 +237,7 @@
     <Content Include="Content\Site.css" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="ClassDiagram1.cd" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
@@ -276,8 +286,8 @@
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
     <Content Include="Views\FootballMatch\FootballMatchForm.cshtml" />
     <Content Include="Views\FootballMatch\FootballMatchResults.cshtml" />
-    <Content Include="Views\FootballMatch\MyBets.cshtml" />
-    <Content Include="Views\FootballMatch\AddBet.cshtml" />
+    <Content Include="Views\Bet\MyBets.cshtml" />
+    <Content Include="Views\Bet\AddBet.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -315,6 +325,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201608021736236_AddingBet.resx">
       <DependentUpon>201608021736236_AddingBet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201608071805187_BuildingOneToManyRelation.resx">
+      <DependentUpon>201608071805187_BuildingOneToManyRelation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201608081837290_AddingPointsToBetModel.resx">
+      <DependentUpon>201608081837290_AddingPointsToBetModel.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

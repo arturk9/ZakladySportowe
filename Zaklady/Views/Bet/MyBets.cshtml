@@ -1,0 +1,62 @@
+﻿
+@model IEnumerable<Zaklady.Models.Bet>
+@{
+    ViewBag.Title = "Home Page";
+}
+
+<h2>Nadchodzące mecze:</h2>
+
+<table class="table">
+    <tr>
+        <th>Data:</th>
+        <th>Goście:</th>
+        <th>Gospodarze:</th>
+        <th>Obstawione bramki gości:</th>
+        <th>Obstawione bramki gospodarzy:</th>
+        <th></th>
+    </tr>
+        @foreach (var footballMatch in Model)
+        {
+            string selectedRow = "";
+
+            <tr class="@selectedRow">
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>@footballMatch.HomeTeamBetGoals</td>
+                <td>@footballMatch.AwayTeamBetGoals</td>
+                <td>Edytuj</td>
+            </tr>                                           
+        }
+</table>
+
+<h2>Mecze zakończone:</h2>
+
+<table class="table">
+    <tr>
+        <th>Data:</th>
+        <th>Goście:</th>
+        <th>Gospodarze:</th>
+        <th>Bramki gości:</th>
+        <th>Bramki gospodarzy:</th>
+        <th>Obstawione bramki gości:</th>
+        <th>Obstawione bramki gospodarzy:</th>
+        <th>Punkty:</th>
+    </tr>
+    @foreach (var footballMatch in Model)
+    {
+        string selectedRow = "";
+
+        <tr class="@selectedRow">
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>@footballMatch.HomeTeamBetGoals</td>
+            <td>@footballMatch.AwayTeamBetGoals</td>
+            <td>@footballMatch.Points</td>
+        </tr>
+    }
+</table>
+

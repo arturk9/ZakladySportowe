@@ -31,11 +31,11 @@ namespace Zaklady.Controllers
         }
 
         [Authorize]
-        public ActionResult BetAScore(BetViewModel viewModel)
+        public ActionResult BetAScore(BetViewModel viewModel, int ViewMatchId)
         {
             var Bet = new Bet
             {
-                MatchId = viewModel.MatchId,
+                MatchId = ViewMatchId,
                 UserId = User.Identity.GetUserId(),
                 HomeTeamBetGoals = viewModel.HomeTeamBetGoals,
                 AwayTeamBetGoals = viewModel.AwayTeamBetGoals

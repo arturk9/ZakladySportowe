@@ -15,6 +15,8 @@
             @Html.TextBoxFor(m => m.AwayTeamBetGoals, new { @class = "form-control", placeholder = "0" })
             @Html.ValidationMessageFor(m => m.AwayTeamBetGoals)
         </div>
-        <button type="submit" class="btn btn-primary">Save</button>
-    </form>
+        <a href="@Url.Action("BetAScore", "Bet", new { ViewMatchId = Model.MatchId })">Zapisz</a>
+
+            <button type="submit" class="btn btn-primary">Save</button>
+</form>
 }

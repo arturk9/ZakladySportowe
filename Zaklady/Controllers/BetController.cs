@@ -31,11 +31,11 @@ namespace Zaklady.Controllers
         }
 
         [Authorize]
-        public ActionResult BetAScore(BetViewModel viewModel, int ViewMatchId)
+        public ActionResult BetAScore(BetViewModel viewModel)
         {
             var Bet = new Bet
             {
-                MatchId = ViewMatchId,
+                MatchId = viewModel.MatchId,
                 UserId = User.Identity.GetUserId(),
                 HomeTeamBetGoals = viewModel.HomeTeamBetGoals,
                 AwayTeamBetGoals = viewModel.AwayTeamBetGoals
@@ -52,9 +52,29 @@ namespace Zaklady.Controllers
         public ActionResult MyBets()
         {
             var userId = User.Identity.GetUserId();
-            var bets = _context.Bets.Where(g => g.UserId == userId).ToList();
-            return View(bets);
+            var bets = _context.Bets
+                .Where(g => g.UserId == userId).ToList();
 
+            return View(bets);
+        }
+
+        [Authorize]
+        [HttpPost]
+        public ActionResult UpdateBet(BetViewModel viewModel)
+        {
+            /*if (!ModelState.IsValid)
+            {
+                return View("FootballMatchForm", viewModel);
+            }*/
+
+            var bet = _context.Bets.Single(g => g.BetId == viewModel.BetId);
+
+            bet.HomeTeamBetGoals = viewModel.HomeTeamBetGoals;
+            bet.AwayTeamBetGoals = viewModel.AwayTeamBetGoals;
+
+            _context.SaveChanges();
+
+            return RedirectToAction("MyBets", "Bet");
         }
     }
 }

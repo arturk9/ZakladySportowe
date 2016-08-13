@@ -1,14 +1,10 @@
 ﻿using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Zaklady.Models
 {
     public class Bet
     {
-        [Key]
-        public int BetId { get; set; }
-
-        [Required]
-        public int MatchId { get; set; }
 
         [Required]
         public string UserId { get; set; }
@@ -21,6 +17,12 @@ namespace Zaklady.Models
 
         public int Points { get; set; }
 
-        public virtual FootballMatch FootballMatch { get; set; }
+        [Key]
+        public int BetId { get; set; }
+
+        [DatabaseGenerated(DatabaseGeneratedOption.None)]
+        public int MatchId;
+
+        public virtual FootballMatch Match { get; set; }
     }
 }

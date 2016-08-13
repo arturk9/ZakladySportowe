@@ -149,3 +149,5 @@ D:\Zaklady - RAW - Kopia\Zaklady\Zaklady\obj\Debug\Zaklady.Migrations.FixingMode
 D:\Zaklady - RAW - Kopia\Zaklady\Zaklady\obj\Debug\Zaklady.Migrations.AddingBet.resources
 D:\Zaklady - RAW - Kopia\Zaklady\Zaklady\obj\Debug\Zaklady.Migrations.BuildingOneToManyRelation.resources
 D:\Zaklady - RAW - Kopia\Zaklady\Zaklady\obj\Debug\Zaklady.Migrations.AddingPointsToBetModel.resources
+D:\Zaklady - RAW - Kopia\Zaklady\Zaklady\obj\Debug\Zaklady.Migrations.ChangedBetsFootballMatchNameProperty.resources
+D:\Zaklady - RAW - Kopia\Zaklady\Zaklady\obj\Debug\Zaklady.Migrations.TemporaryFixes.resources

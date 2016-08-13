@@ -215,6 +215,14 @@
     <Compile Include="Migrations\201608081837290_AddingPointsToBetModel.Designer.cs">
       <DependentUpon>201608081837290_AddingPointsToBetModel.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201608121930393_ChangedBetsFootballMatchNameProperty.cs" />
+    <Compile Include="Migrations\201608121930393_ChangedBetsFootballMatchNameProperty.Designer.cs">
+      <DependentUpon>201608121930393_ChangedBetsFootballMatchNameProperty.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201608130816175_TemporaryFixes.cs" />
+    <Compile Include="Migrations\201608130816175_TemporaryFixes.Designer.cs">
+      <DependentUpon>201608130816175_TemporaryFixes.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\ApplicationDbContext.cs" />
@@ -331,6 +339,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201608081837290_AddingPointsToBetModel.resx">
       <DependentUpon>201608081837290_AddingPointsToBetModel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201608121930393_ChangedBetsFootballMatchNameProperty.resx">
+      <DependentUpon>201608121930393_ChangedBetsFootballMatchNameProperty.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201608130816175_TemporaryFixes.resx">
+      <DependentUpon>201608130816175_TemporaryFixes.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

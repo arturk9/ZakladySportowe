@@ -6,9 +6,7 @@ namespace Zaklady.Models
 {
     public class FootballMatch
     {
-        public int Id { get; set; }
-
-        public ApplicationUser User { get; set; }
+        public int Id { get; set; }        
 
         [Required]
         public string UserId { get; set; }
@@ -38,5 +36,6 @@ namespace Zaklady.Models
         public int PointsForBetingMatchResult { get; set; }
 
         public virtual ICollection<Bet> Bets { get; set; }
+        public ApplicationUser User { get; set; }
     }
 }

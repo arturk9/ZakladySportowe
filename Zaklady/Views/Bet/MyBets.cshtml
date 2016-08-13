@@ -20,11 +20,11 @@
             string selectedRow = "";
 
             <tr class="@selectedRow">
-                <td>@footballMatch.FootballMatch</td>
-                <td></td>
-                <td></td>
-                <td>@footballMatch.HomeTeamBetGoals</td>
+                <td>@footballMatch.Match.DateTime</td>
                 <td>@footballMatch.AwayTeamBetGoals</td>
+                <td>@footballMatch.HomeTeamBetGoals</td>
+                <td></td>
+                <td></td>
                 <td>Edytuj</td>
             </tr>                                           
         }
@@ -53,9 +53,9 @@
             <td></td>
             <td></td>
             <td></td>
-            <td>@footballMatch.HomeTeamBetGoals</td>
-            <td>@footballMatch.AwayTeamBetGoals</td>
-            <td>@footballMatch.Points</td>
+            <td></td>
+            <td></td>
+            <td></td>
         </tr>
     }
 </table>

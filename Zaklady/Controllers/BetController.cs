@@ -1,4 +1,5 @@
-﻿using System.Linq;
+﻿using System.Data.Entity;
+using System.Linq;
 using System.Web.Mvc;
 using Microsoft.AspNet.Identity;
 using Zaklady.Models;
@@ -52,12 +53,14 @@ namespace Zaklady.Controllers
         public ActionResult MyBets()
         {
             var userId = User.Identity.GetUserId();
+
             var bets = _context.Bets
-                .Where(g => g.UserId == userId).ToList();
+                .Include(t => t.Match)
+                .ToList();
 
             return View(bets);
         }
-
+        
         [Authorize]
         [HttpPost]
         public ActionResult UpdateBet(BetViewModel viewModel)

@@ -1,0 +1,21 @@
+﻿@model Zaklady.ViewModels.BetViewModel
+@{
+    ViewBag.Title = "Obstaw wynik spotkania";
+}
+@using (Html.BeginForm(Model.Action, "Bet"))
+{<h3>Przewidywany wynik meczu:</h3>
+    <form>
+        <div class="form-group">
+            <b>@Model.HomeTeam:</b>
+            @Html.TextBoxFor(m => m.HomeTeamBetGoals, new { @class = "form-control", placeholder = "0" })
+            @Html.ValidationMessageFor(m => m.HomeTeamBetGoals)
+        </div>
+        <div class="form-group">
+            <b>@Model.AwayTeam:</b>
+            @Html.TextBoxFor(m => m.AwayTeamBetGoals, new { @class = "form-control", placeholder = "0" })
+            @Html.ValidationMessageFor(m => m.AwayTeamBetGoals)
+        </div>
+        @Html.HiddenFor(m => m.MatchId, new { @class = "form-control" })
+            <button type="submit" class="btn btn-primary">Save</button>
+</form>
+}

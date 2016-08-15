@@ -5,8 +5,9 @@ namespace Zaklady.Models
 {
     public class Bet
     {
+        [Key]
+        public int BetId { get; set; }
 
-        [Required]
         public string UserId { get; set; }
 
         [Required]
@@ -15,14 +16,10 @@ namespace Zaklady.Models
         [Required]
         public int AwayTeamBetGoals { get; set; }
 
-        public int Points { get; set; }
-
-        [Key]
-        public int BetId { get; set; }
-
         [DatabaseGenerated(DatabaseGeneratedOption.None)]
-        public int MatchId;
+        public int? MatchId { get; set; }
 
         public virtual FootballMatch Match { get; set; }
+        public virtual ApplicationUser User { get; set; }
     }
 }

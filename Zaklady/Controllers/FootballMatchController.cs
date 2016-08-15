@@ -87,11 +87,40 @@ namespace Zaklady.Controllers
         }
 
         [Authorize]
+        public ActionResult RemoveFootballMatchConfrimation(int id)
+        {
+            var footballMatch = _context.FootballMatches.Single(g => g.Id == id);
+            var viewModel = new FootballMatchViewModel
+            {
+                Heading = "Edytuj mecz",
+                id = footballMatch.Id,
+                HomeTeam = footballMatch.HomeTeam,
+                AwayTeam = footballMatch.AwayTeam,
+                Date = footballMatch.DateTime.ToString("d MMM yyyy"),
+                Time = footballMatch.DateTime.ToString("HH:mm"),
+                Torunament = footballMatch.Torunament
+            };
+
+            return View("DeleteBetConfirmation", viewModel);
+        }
+
+        [Authorize]
         public ActionResult RemoveFootballMatch(FootballMatchViewModel viewModel)
         {
             var footballMatch = _context.FootballMatches.Single(g => g.Id == viewModel.id);
-            _context.FootballMatches.Remove(footballMatch);
-            _context.SaveChanges();
+
+            try
+            {
+                var bet = _context.Bets.Single(g => g.MatchId == viewModel.id);
+                _context.Bets.Remove(bet);
+                _context.SaveChanges();
+                _context.FootballMatches.Remove(footballMatch);
+                _context.SaveChanges();
+            }
+            catch {
+                _context.FootballMatches.Remove(footballMatch);
+                _context.SaveChanges(); }
+            ;
 
             return RedirectToAction("Index", "Home");
         }
@@ -109,7 +138,7 @@ namespace Zaklady.Controllers
             footballMatch.PointsForBetingExactTeamScores = viewModel.PointsForBetingExactTeamScores;
             footballMatch.PointsForBetingMatchResult = viewModel.PointsForBetingMatchResult;
 
-            _context.SaveChanges();
+                _context.SaveChanges();
 
             return RedirectToAction("Index", "Home");
         }

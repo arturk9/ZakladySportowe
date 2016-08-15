@@ -1,0 +1,23 @@
+﻿@model Zaklady.ViewModels.FootballMatchViewModel
+@{
+    ViewBag.Title = "DeleteBetConfirmation";
+}
+
+@using (Html.BeginForm("RemoveFootballMatch", "FootballMatch"))
+{
+    @Html.HiddenFor(m => m.id)
+    <center>
+       <div class="panel panel-danger">
+            
+   <h1>Czy jesteś pewien?</h1>
+            <br />
+            <h4>Usunięcie spowoduje nieodwracalne zmiany. Czy jesteś pewien, że chcesz usunąć mecz:</h4>
+            <br>
+            <h4> @Model.Date &emsp;&emsp;&emsp;    @Model.HomeTeam - @Model.AwayTeam</h4>
+            <br>
+            <button type="submit" class="btn btn-danger btn-sm"><font size="3">USUŃ</font></button><p></p>
+            </div>
+</center>
+}
+
+

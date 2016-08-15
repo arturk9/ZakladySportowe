@@ -34,6 +34,7 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>true</UseVSHostingProcess>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
@@ -172,6 +173,7 @@
     <Compile Include="Controllers\FootballMatchController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
+    <Compile Include="Controllers\RankingController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -223,6 +225,26 @@
     <Compile Include="Migrations\201608130816175_TemporaryFixes.Designer.cs">
       <DependentUpon>201608130816175_TemporaryFixes.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201608131050083_TemporaryFixes1.cs" />
+    <Compile Include="Migrations\201608131050083_TemporaryFixes1.Designer.cs">
+      <DependentUpon>201608131050083_TemporaryFixes1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201608141322023_TemporaryFixes2.cs" />
+    <Compile Include="Migrations\201608141322023_TemporaryFixes2.Designer.cs">
+      <DependentUpon>201608141322023_TemporaryFixes2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201608141330198_TemporaryFixes3.cs" />
+    <Compile Include="Migrations\201608141330198_TemporaryFixes3.Designer.cs">
+      <DependentUpon>201608141330198_TemporaryFixes3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201608141331336_TemporaryFixes4.cs" />
+    <Compile Include="Migrations\201608141331336_TemporaryFixes4.Designer.cs">
+      <DependentUpon>201608141331336_TemporaryFixes4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201608141919375_RemovingPointsFromBetModel.cs" />
+    <Compile Include="Migrations\201608141919375_RemovingPointsFromBetModel.Designer.cs">
+      <DependentUpon>201608141919375_RemovingPointsFromBetModel.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\ApplicationDbContext.cs" />
@@ -237,16 +259,26 @@
     <Compile Include="ViewModels\ValidTimeAttribute.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\bootstrap-theme.css" />
+    <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <Content Include="ClassDiagram1.cd" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="Content\bootstrap.min.css.map" />
+    <Content Include="Content\bootstrap.css.map" />
+    <Content Include="Content\bootstrap-theme.min.css.map" />
+    <Content Include="Content\bootstrap-theme.css.map" />
+    <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
-    <Content Include="ClassDiagram1.cd" />
-    <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
     <None Include="Scripts\jquery.validate-vsdoc.js" />
@@ -295,16 +327,14 @@
     <Content Include="Views\FootballMatch\FootballMatchForm.cshtml" />
     <Content Include="Views\FootballMatch\FootballMatchResults.cshtml" />
     <Content Include="Views\Bet\MyBets.cshtml" />
-    <Content Include="Views\Bet\AddBet.cshtml" />
+    <Content Include="Views\Bet\BetForm.cshtml" />
+    <Content Include="Views\FootballMatch\DeleteBetConfirmation.cshtml" />
+    <Content Include="Views\Ranking\Rankings.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Views\Rankings\" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="fonts\glyphicons-halflings-regular.woff" />
-    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
-    <Content Include="fonts\glyphicons-halflings-regular.eot" />
     <Content Include="packages.config" />
     <None Include="Project_Readme.html" />
     <Content Include="Scripts\jquery-1.10.2.min.map" />
@@ -345,6 +375,21 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201608130816175_TemporaryFixes.resx">
       <DependentUpon>201608130816175_TemporaryFixes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201608131050083_TemporaryFixes1.resx">
+      <DependentUpon>201608131050083_TemporaryFixes1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201608141322023_TemporaryFixes2.resx">
+      <DependentUpon>201608141322023_TemporaryFixes2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201608141330198_TemporaryFixes3.resx">
+      <DependentUpon>201608141330198_TemporaryFixes3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201608141331336_TemporaryFixes4.resx">
+      <DependentUpon>201608141331336_TemporaryFixes4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201608141919375_RemovingPointsFromBetModel.resx">
+      <DependentUpon>201608141919375_RemovingPointsFromBetModel.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

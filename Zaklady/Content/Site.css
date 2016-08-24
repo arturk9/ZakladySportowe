@@ -94,5 +94,9 @@ list-style: none;
     display: block;
 }
 
-
-
+.footballmatch > li .details .score 
+    {
+    position:absolute;
+    top:12px;
+    left: 250px;
+    }

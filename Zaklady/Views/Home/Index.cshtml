@@ -1,44 +1,277 @@
 ﻿@model IEnumerable<Zaklady.Models.FootballMatch>
-@{
-    ViewBag.Title = "Home Page";
-}
-<ul class="footballmatch">
-    @foreach (var footballMatch in Model)
-    {
-        <li>
-            <div class="date">
-                <div class="month">
-                    @footballMatch.DateTime.ToString("MMM")
+
+    <div class="row">
+        <div class="col-sm-12">
+                <img src="~/Content/Images/logo.png" />
+            <p></p>
+            <div class="row">
+
+                <div class="col-xs-2">
+                    <h4>Weź udział w zabawie!</h4>
+                    <h5>
+                        Weź udział w lidze bukmaherskiej, wytypuj swoich zwycięzców i zostań liderm klasyfikacji!
+                        <br /><br /><button class="btn btn-primary">Dołącz teraz!</button>
+                    </h5>
                 </div>
-                <div class="day">
-                    @footballMatch.DateTime.ToString("d ")
+
+                <div class="col-xs-5">
+                    <h4>Lorem ipsum</h4>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </div>
+
+                <div class="col-xs-5">
+
+                    <!-- #region Jssor Slider Begin -->
+                    <!-- Generator: Jssor Slider Maker -->
+                    <!-- Source: http://www.jssor.com/demos/simple-fade-slideshow.slider -->
+                    <!-- This demo works with jquery library -->
+
+                    <script type="text/javascript" src="~/Scripts/jquery-1.11.3.min.js"></script>
+                    <script type="text/javascript" src="~/Scripts/jssor.slider-21.1.5.mini.js"></script>
+                    <!-- use jssor.slider-21.1.5.debug.js instead for debug -->
+                    <script>
+                        jQuery(document).ready(function ($) {
+
+                            var jssor_1_SlideshowTransitions = [
+                              { $Duration: 1200, $Opacity: 2 }
+                            ];
+
+                            var jssor_1_options = {
+                                $AutoPlay: true,
+                                $SlideshowOptions: {
+                                    $Class: $JssorSlideshowRunner$,
+                                    $Transitions: jssor_1_SlideshowTransitions,
+                                    $TransitionsOrder: 1
+                                },
+                                $ArrowNavigatorOptions: {
+                                    $Class: $JssorArrowNavigator$
+                                },
+                                $BulletNavigatorOptions: {
+                                    $Class: $JssorBulletNavigator$
+                                }
+                            };
+
+                            var jssor_1_slider = new $JssorSlider$("jssor_1", jssor_1_options);
+
+                            //responsive code begin
+                            //you can remove responsive code if you don't want the slider scales while window resizing
+                            function ScaleSlider() {
+                                var refSize = jssor_1_slider.$Elmt.parentNode.clientWidth;
+                                if (refSize) {
+                                    refSize = Math.min(refSize, 600);
+                                    jssor_1_slider.$ScaleWidth(refSize);
+                                }
+                                else {
+                                    window.setTimeout(ScaleSlider, 30);
+                                }
+                            }
+                            ScaleSlider();
+                            $(window).bind("load", ScaleSlider);
+                            $(window).bind("resize", ScaleSlider);
+                            $(window).bind("orientationchange", ScaleSlider);
+                            //responsive code end
+                        });
+                    </script>
+
+                    <style>
+                            /* jssor slider bullet navigator skin 05 css */
+                            /*
+                        .jssorb05 div           (normal)
+                        .jssorb05 div:hover     (normal mouseover)
+                        .jssorb05 .av           (active)
+                        .jssorb05 .av:hover     (active mouseover)
+                        .jssorb05 .dn           (mousedown)
+                        */
+                            .jssorb05 {
+                                position: absolute;
+                            }
+
+                                .jssorb05 div, .jssorb05 div:hover, .jssorb05 .av {
+                                    position: absolute;
+                                    /* size of bullet elment */
+                                    width: 16px;
+                                    height: 16px;
+                                    background: url('../../Content/Images/b05.png') no-repeat;
+                                    overflow: hidden;
+                                    cursor: pointer;
+                                }
+
+                                .jssorb05 div {
+                                    background-position: -7px -7px;
+                                }
+
+                                    .jssorb05 div:hover, .jssorb05 .av:hover {
+                                        background-position: -37px -7px;
+                                    }
+
+                                .jssorb05 .av {
+                                    background-position: -67px -7px;
+                                }
+
+                                .jssorb05 .dn, .jssorb05 .dn:hover {
+                                    background-position: -97px -7px;
+                                }
+
+                            /* jssor slider arrow navigator skin 12 css */
+                            /*
+                        .jssora12l                  (normal)
+                        .jssora12r                  (normal)
+                        .jssora12l:hover            (normal mouseover)
+                        .jssora12r:hover            (normal mouseover)
+                        .jssora12l.jssora12ldn      (mousedown)
+                        .jssora12r.jssora12rdn      (mousedown)
+                        */
+                            .jssora12l, .jssora12r {
+                                display: block;
+                                position: absolute;
+                                /* size of arrow element */
+                                width: 30px;
+                                height: 46px;
+                                cursor: pointer;
+                                background: url('../../Content/Images/a12.png') no-repeat;
+                                overflow: hidden;
+                            }
+
+                            .jssora12l {
+                                background-position: -16px -37px;
+                            }
+
+                            .jssora12r {
+                                background-position: -75px -37px;
+                            }
+
+                            .jssora12l:hover {
+                                background-position: -136px -37px;
+                            }
+
+                            .jssora12r:hover {
+                                background-position: -195px -37px;
+                            }
+
+                            .jssora12l.jssora12ldn {
+                                background-position: -256px -37px;
+                            }
+
+                            .jssora12r.jssora12rdn {
+                                background-position: -315px -37px;
+                            }
+                    </style>
+
+
+                    <div id="jssor_1" style="position: relative; margin: 0 auto; top: 0px; left: 0px; width: 500px; height: 275px; overflow: hidden; visibility: hidden;">
+                        <!-- Loading Screen -->
+                        <div data-u="loading" style="position: absolute; top: 0px; left: 0px;">
+                            <div style="filter: alpha(opacity=70); opacity: 0.7; position: absolute; display: block; top: 0px; left: 0px; width: 100%; height: 100%;"></div>
+                            <div style="position:absolute;display:block;background:url('../../Content/Images/loading.gif') no-repeat center center;top:0px;left:0px;width:100%;height:100%;"></div>
+                        </div>
+                        <div data-u="slides" style="cursor: default; position: relative; top: 0px; left: 0px; width: 500px; height: 275px; overflow: hidden;">
+
+                            <div data-p="112.50" style="display: none;">
+                                <h4>Nadchodzące wydarzenia:</h4>
+                                <br />
+                                <ul class="footballmatch">
+                                    @foreach (var footballMatch in Model.OrderByDescending(m => m.DateTime).Where(m => m.DateTime > DateTime.Now).Take(2))
+                                    {
+                                        <li>
+                                            <div class="date">
+                                                <div class="month">
+                                                    @footballMatch.DateTime.ToString("MMM")
+                                                </div>
+                                                <div class="day">
+                                                    @footballMatch.DateTime.ToString("d ")
+                                                </div>
+                                            </div>
+                                            <div class="details">
+                                                <span class="hometeam">
+                                                    @footballMatch.HomeTeam
+                                                </span>
+                                                vs.
+                                                <span class="genre">
+                                                    @footballMatch.AwayTeam
+                                                </span>
+                                                <span class="hour">
+                                                    @footballMatch.DateTime.ToString("HH:mm")
+                                                </span>
+                                                <span class="tournament">
+                                                    @footballMatch.Torunament
+                                                </span>
+                                                <span class="button">
+                                                    <button class="btn btn-primary btn-sm" onclick="location.href='@Url.Action("AddBet", "Bet", new {id = footballMatch.Id})'">Obstaw</button>
+                                                </span>
+                                            </div>
+                                        </li>
+                                    }
+                                </ul>
+                            </div>
+                            <div data-p="112.50" style="display: none;">
+                                <h4>Ostatnio zakończone spotkania:</h4>
+                                <br />
+                                <ul class="footballmatch">
+                                    @foreach (var footballMatch in Model.OrderByDescending(m => m.DateTime).Where(m => m.DateTime < DateTime.Now).Take(2))
+                                    {
+                                        <li>
+                                            <div class="date">
+                                                <div class="month">
+                                                    @footballMatch.DateTime.ToString("MMM")
+                                                </div>
+                                                <div class="day">
+                                                    @footballMatch.DateTime.ToString("d ")
+                                                </div>
+                                            </div>
+                                            <div class="details">
+                                                <span class="hometeam">
+                                                    @footballMatch.HomeTeam
+                                                </span>
+                                                @footballMatch.HomeTeamGoals : @footballMatch.AwayTeamGoals
+                                                <span class="genre">
+                                                    @footballMatch.AwayTeam
+                                                </span>
+                                                <span class="hour">
+                                                    @footballMatch.DateTime.ToString("HH:mm")
+                                                </span>
+                                                <span class="tournament">
+                                                    @footballMatch.Torunament
+                                                </span>
+                                            </div>
+                                        </li>
+                                    }
+                                </ul>
+                            </div>
+                            <div data-p="112.50" style="display: none;">
+                                <h4>Najlepsi użytkownicy:</h4>
+                                <center>
+                                    <br />
+                                    <table width=250>
+                                        <tr>
+                                            <td style="background-color:gold; padding:2px"><h6>aa</h6></td>
+                                        </tr>
+                                        <tr>
+                                            <td style="background-color:silver; padding:2px"><h6>aa</h6></td>
+                                        </tr>
+                                        <tr>
+                                            <td style="background-color:saddlebrown; padding:2px"><h6>aa</h6></td>
+                                        </tr>
+
+                                    </table>
+                                </center>
+                            </div>
+
+
+                        </div>
+                        <!-- Bullet Navigator -->
+                        <div data-u="navigator" class="jssorb05" style="bottom:16px;right:16px;" data-autocenter="1">
+                            <!-- bullet navigator item prototype -->
+                            <div data-u="prototype" style="width:16px;height:16px;"></div>
+                        </div>
+                        <!-- Arrow Navigator -->
+                        <span data-u="arrowleft" class="jssora12l" style="top:0px;left:0px;width:30px;height:46px;" data-autocenter="2"></span>
+                        <span data-u="arrowright" class="jssora12r" style="top:0px;right:0px;width:30px;height:46px;" data-autocenter="2"></span>
+                    </div>
+
+                    <!-- #endregion Jssor Slider End -->
                 </div>
             </div>
-            <div class="details">
-                <span class="hometeam">
-                    @footballMatch.HomeTeam
-                </span>
-                vs.
-                <span class="genre">
-                    @footballMatch.AwayTeam
-                </span>
-                <span class="hour">
-                    @footballMatch.DateTime.ToString("HH:mm")
-                </span>
-                <span class="tournament">
-                    @footballMatch.Torunament
-                </span>
-                <span class="button">
-                    <button class="btn btn-primary btn-sm" onclick="location.href='@Url.Action("AddBet", "Bet", new {id = footballMatch.Id})'">Obstaw</button>
-                </span>
-                <div class="actions">
-                    <a href="@Url.Action("EditFootballMatch", "FootballMatch", new { id = footballMatch.Id })">Edytuj</a>
-                    |
-                    <a href="@Url.Action("RemoveFootballMatchConfrimation", "FootballMatch", new { id = footballMatch.Id })">Usuń</a>
-                    |
-                    <a href="@Url.Action("FillFootballMatchResult", "FootballMatch", new { id = footballMatch.Id })">Dodaj wynik</a>
-                </div>
-            </div>
-        </li>
-    }
-</ul>
+
+        </div>
+    </div>
+

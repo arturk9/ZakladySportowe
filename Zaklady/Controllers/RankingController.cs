@@ -1,17 +1,29 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
+﻿using System.Linq;
 using System.Web.Mvc;
+using Zaklady.Models;
+using Zaklady.ViewModels;
 
 namespace Zaklady.Controllers
 {
     public class RankingController : Controller
     {
-        // GET: Ranking
-        public ActionResult Index()
+        private ApplicationDbContext _context;
+
+        public RankingController()
         {
-            return View();
+            _context = new ApplicationDbContext();
+        }
+        // GET: Ranking
+        public ActionResult RankingsIndex()
+        {
+            var usersList = _context.Users.ToList();
+
+            var usersViewModel = new UsersViewModel
+            {
+                UsersList = usersList
+            };
+
+            return View(usersViewModel);
         }
     }
 }

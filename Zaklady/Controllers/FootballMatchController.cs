@@ -44,7 +44,7 @@ namespace Zaklady.Controllers
             _context.FootballMatches.Add(footballMatch);
             _context.SaveChanges();
 
-            return RedirectToAction("Index", "Home");
+            return RedirectToAction("UpcomingEvents", "FootballMatch");
         }
 
         [Authorize]
@@ -65,7 +65,7 @@ namespace Zaklady.Controllers
 
             _context.SaveChanges();
 
-            return RedirectToAction("Index", "Home");
+            return RedirectToAction("UpcomingEvents", "FootballMatch");
         }
 
         [Authorize]
@@ -122,7 +122,7 @@ namespace Zaklady.Controllers
                 _context.SaveChanges(); }
             ;
 
-            return RedirectToAction("Index", "Home");
+            return RedirectToAction("UpcomingEvents", "FootballMatch");
         }
 
         public ActionResult AddFootballMatchResult(FootballMatchViewModel viewModel)
@@ -140,7 +140,7 @@ namespace Zaklady.Controllers
 
                 _context.SaveChanges();
 
-            return RedirectToAction("Index", "Home");
+            return RedirectToAction("UpcomingEvents", "FootballMatch");
         }
 
         [Authorize]
@@ -157,6 +157,12 @@ namespace Zaklady.Controllers
                 PointsForBetingMatchResult = footballMatch.PointsForBetingMatchResult
             };
             return View("FootballMatchResults", viewModel);
+        }
+
+        public ActionResult UpcomingEvents()
+        {
+            var upcomingMatches = _context.FootballMatches.OrderBy(m => m.DateTime);
+            return View(upcomingMatches);
         }
     }
 }

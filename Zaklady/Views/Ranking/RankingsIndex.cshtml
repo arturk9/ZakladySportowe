@@ -1,0 +1,22 @@
+﻿@model Zaklady.ViewModels.UsersViewModel
+
+<table class="table">
+    <tr style="background-color:black; color:lightgray">
+        <th>Imię:</th>
+        <th>Email:</th>
+        <th><center>Punkty:</center></th>
+        <th><center>Trafione dokładne wyniki:</center></th>
+        <th><center>Trafione prawidłowe rezultaty:</center></th>
+    </tr>
+    @foreach (var user in Model.UsersList)
+    {
+        <tr>
+            <td>@user.UserName</td>
+            <td>@user.Email</td>
+            <td>@user.Email</td>
+            <td>@user.Email</td>
+            <td>@user.Email</td>
+</tr>
+    }
+</table>
+

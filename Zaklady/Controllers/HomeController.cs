@@ -32,5 +32,10 @@ namespace Zaklady.Controllers
 
             return View();
         }
+
+        public ActionResult slidertest()
+        {
+            return View();
+        }
     }
 }

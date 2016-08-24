@@ -20,7 +20,8 @@
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
-                    <li>@Html.ActionLink("Ranking", "Index", "Home")</li>
+                    <li>@Html.ActionLink("Nadchodzące mecze", "UpcomingEvents", "FootballMatch")</li>
+                    <li>@Html.ActionLink("Ranking", "RankingsIndex", "Ranking")</li>
                     <li>@Html.ActionLink("Moje zakłady", "MyBets", "Bet")</li>
                     <li>@Html.ActionLink("Dodaj mecz", "CreateFootballMatch", "FootballMatch")</li>
                 </ul>
@@ -31,9 +32,9 @@
     <div class="container body-content">
         @RenderBody()
         <hr />
-        <footer>
-            <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
-        </footer>
+        <footer style="background: black; width:100%; float:left; padding:5px;">
+            <center><h6><font color="silver">Created by Artur Kulesza - ASP.NET 2016</font></h6></center>
+</footer>
     </div>
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")

@@ -33,7 +33,7 @@ namespace Zaklady.Controllers
             return View();
         }
 
-        public ActionResult slidertest()
+        public ActionResult Slider()
         {
             return View();
         }

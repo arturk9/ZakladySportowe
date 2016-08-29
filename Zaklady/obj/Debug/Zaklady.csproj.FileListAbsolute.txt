@@ -156,3 +156,8 @@ D:\Zaklady - RAW - Kopia\Zaklady\Zaklady\obj\Debug\Zaklady.Migrations.TemporaryF
 D:\Zaklady - RAW - Kopia\Zaklady\Zaklady\obj\Debug\Zaklady.Migrations.TemporaryFixes3.resources
 D:\Zaklady - RAW - Kopia\Zaklady\Zaklady\obj\Debug\Zaklady.Migrations.TemporaryFixes4.resources
 D:\Zaklady - RAW - Kopia\Zaklady\Zaklady\obj\Debug\Zaklady.Migrations.RemovingPointsFromBetModel.resources
+D:\Zaklady - RAW - Kopia\Zaklady\Zaklady\bin\PagedList.dll
+D:\Zaklady - RAW - Kopia\Zaklady\Zaklady\bin\PagedList.Mvc.dll
+D:\Zaklady - RAW - Kopia\Zaklady\Zaklady\bin\PagedList.xml
+D:\Zaklady - RAW - Kopia\Zaklady\Zaklady\bin\PagedList.Mvc.xml
+D:\Zaklady - RAW - Kopia\Zaklady\Zaklady\obj\Debug\Zaklady.Migrations.AddNameToApplicationUser.resources

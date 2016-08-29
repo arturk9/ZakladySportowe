@@ -1,6 +1,7 @@
 ﻿using System.Linq;
 using System.Web.Mvc;
 using Microsoft.AspNet.Identity;
+using PagedList;
 using Zaklady.Models;
 using Zaklady.ViewModels;
 
@@ -159,10 +160,12 @@ namespace Zaklady.Controllers
             return View("FootballMatchResults", viewModel);
         }
 
-        public ActionResult UpcomingEvents()
+        public ViewResult UpcomingEvents(int? page)
         {
             var upcomingMatches = _context.FootballMatches.OrderBy(m => m.DateTime);
-            return View(upcomingMatches);
+            int pageSize = 10;
+            int pageNumber = (page ?? 1);
+            return View(upcomingMatches.ToPagedList(pageNumber, pageSize));
         }
     }
 }

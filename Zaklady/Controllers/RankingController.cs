@@ -17,11 +17,14 @@ namespace Zaklady.Controllers
         public ActionResult RankingsIndex()
         {
             var usersList = _context.Users.ToList();
+            var BetsList = _context.Bets.ToList();
 
             var usersViewModel = new UsersViewModel
             {
                 UsersList = usersList
             };
+
+            usersViewModel.SetUsersPoints(usersList, BetsList);
 
             return View(usersViewModel);
         }

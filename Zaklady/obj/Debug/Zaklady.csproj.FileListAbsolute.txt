@@ -161,3 +161,188 @@ D:\Zaklady - RAW - Kopia\Zaklady\Zaklady\bin\PagedList.Mvc.dll
 D:\Zaklady - RAW - Kopia\Zaklady\Zaklady\bin\PagedList.xml
 D:\Zaklady - RAW - Kopia\Zaklady\Zaklady\bin\PagedList.Mvc.xml
 D:\Zaklady - RAW - Kopia\Zaklady\Zaklady\obj\Debug\Zaklady.Migrations.AddNameToApplicationUser.resources
+C:\Users\Artur\Documents\Visual Studio 2015\Projects\Zaklady\ZakladySportowe\Zaklady\bin\roslyn\csc.exe
+C:\Users\Artur\Documents\Visual Studio 2015\Projects\Zaklady\ZakladySportowe\Zaklady\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Artur\Documents\Visual Studio 2015\Projects\Zaklady\ZakladySportowe\Zaklady\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Artur\Documents\Visual Studio 2015\Projects\Zaklady\ZakladySportowe\Zaklady\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Artur\Documents\Visual Studio 2015\Projects\Zaklady\ZakladySportowe\Zaklady\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Artur\Documents\Visual Studio 2015\Projects\Zaklady\ZakladySportowe\Zaklady\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Artur\Documents\Visual Studio 2015\Projects\Zaklady\ZakladySportowe\Zaklady\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Artur\Documents\Visual Studio 2015\Projects\Zaklady\ZakladySportowe\Zaklady\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Artur\Documents\Visual Studio 2015\Projects\Zaklady\ZakladySportowe\Zaklady\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Artur\Documents\Visual Studio 2015\Projects\Zaklady\ZakladySportowe\Zaklady\bin\roslyn\vbc.exe
+C:\Users\Artur\Documents\Visual Studio 2015\Projects\Zaklady\ZakladySportowe\Zaklady\bin\roslyn\VBCSCompiler.exe
+C:\Users\Artur\Documents\Visual Studio 2015\Projects\Zaklady\ZakladySportowe\Zaklady\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Artur\Documents\Visual Studio 2015\Projects\Zaklady\ZakladySportowe\Zaklady\bin\Zaklady.dll.config
+C:\Users\Artur\Documents\Visual Studio 2015\Projects\Zaklady\ZakladySportowe\Zaklady\bin\Zaklady.dll
+C:\Users\Artur\Documents\Visual Studio 2015\Projects\Zaklady\ZakladySportowe\Zaklady\bin\Zaklady.pdb
+C:\Users\Artur\Documents\Visual Studio 2015\Projects\Zaklady\ZakladySportowe\Zaklady\bin\Antlr3.Runtime.dll
+C:\Users\Artur\Documents\Visual Studio 2015\Projects\Zaklady\ZakladySportowe\Zaklady\bin\EntityFramework.dll
+C:\Users\Artur\Documents\Visual Studio 2015\Projects\Zaklady\ZakladySportowe\Zaklady\bin\EntityFramework.SqlServer.dll
+C:\Users\Artur\Documents\Visual Studio 2015\Projects\Zaklady\ZakladySportowe\Zaklady\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\Artur\Documents\Visual Studio 2015\Projects\Zaklady\ZakladySportowe\Zaklady\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\Artur\Documents\Visual Studio 2015\Projects\Zaklady\ZakladySportowe\Zaklady\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\Artur\Documents\Visual Studio 2015\Projects\Zaklady\ZakladySportowe\Zaklady\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Artur\Documents\Visual Studio 2015\Projects\Zaklady\ZakladySportowe\Zaklady\bin\Microsoft.Owin.dll
+C:\Users\Artur\Documents\Visual Studio 2015\Projects\Zaklady\ZakladySportowe\Zaklady\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\Artur\Documents\Visual Studio 2015\Projects\Zaklady\ZakladySportowe\Zaklady\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\Artur\Documents\Visual Studio 2015\Projects\Zaklady\ZakladySportowe\Zaklady\bin\Microsoft.Owin.Security.dll
+C:\Users\Artur\Documents\Visual Studio 2015\Projects\Zaklady\ZakladySportowe\Zaklady\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\Artur\Documents\Visual Studio 2015\Projects\Zaklady\ZakladySportowe\Zaklady\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\Artur\Documents\Visual Studio 2015\Projects\Zaklady\ZakladySportowe\Zaklady\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\Artur\Documents\Visual Studio 2015\Projects\Zaklady\ZakladySportowe\Zaklady\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\Artur\Documents\Visual Studio 2015\Projects\Zaklady\ZakladySportowe\Zaklady\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\Artur\Documents\Visual Studio 2015\Projects\Zaklady\ZakladySportowe\Zaklady\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Artur\Documents\Visual Studio 2015\Projects\Zaklady\ZakladySportowe\Zaklady\bin\Newtonsoft.Json.dll
+C:\Users\Artur\Documents\Visual Studio 2015\Projects\Zaklady\ZakladySportowe\Zaklady\bin\Owin.dll
+C:\Users\Artur\Documents\Visual Studio 2015\Projects\Zaklady\ZakladySportowe\Zaklady\bin\PagedList.dll
+C:\Users\Artur\Documents\Visual Studio 2015\Projects\Zaklady\ZakladySportowe\Zaklady\bin\PagedList.Mvc.dll
+C:\Users\Artur\Documents\Visual Studio 2015\Projects\Zaklady\ZakladySportowe\Zaklady\bin\System.Web.Helpers.dll
+C:\Users\Artur\Documents\Visual Studio 2015\Projects\Zaklady\ZakladySportowe\Zaklady\bin\System.Web.Mvc.dll
+C:\Users\Artur\Documents\Visual Studio 2015\Projects\Zaklady\ZakladySportowe\Zaklady\bin\System.Web.Optimization.dll
+C:\Users\Artur\Documents\Visual Studio 2015\Projects\Zaklady\ZakladySportowe\Zaklady\bin\System.Web.Razor.dll
+C:\Users\Artur\Documents\Visual Studio 2015\Projects\Zaklady\ZakladySportowe\Zaklady\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Artur\Documents\Visual Studio 2015\Projects\Zaklady\ZakladySportowe\Zaklady\bin\System.Web.WebPages.dll
+C:\Users\Artur\Documents\Visual Studio 2015\Projects\Zaklady\ZakladySportowe\Zaklady\bin\System.Web.WebPages.Razor.dll
+C:\Users\Artur\Documents\Visual Studio 2015\Projects\Zaklady\ZakladySportowe\Zaklady\bin\WebGrease.dll
+C:\Users\Artur\Documents\Visual Studio 2015\Projects\Zaklady\ZakladySportowe\Zaklady\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Artur\Documents\Visual Studio 2015\Projects\Zaklady\ZakladySportowe\Zaklady\bin\PagedList.xml
+C:\Users\Artur\Documents\Visual Studio 2015\Projects\Zaklady\ZakladySportowe\Zaklady\bin\PagedList.Mvc.xml
+C:\Users\Artur\Documents\Visual Studio 2015\Projects\Zaklady\ZakladySportowe\Zaklady\bin\System.Web.Helpers.xml
+C:\Users\Artur\Documents\Visual Studio 2015\Projects\Zaklady\ZakladySportowe\Zaklady\bin\System.Web.Mvc.xml
+C:\Users\Artur\Documents\Visual Studio 2015\Projects\Zaklady\ZakladySportowe\Zaklady\bin\System.Web.Optimization.xml
+C:\Users\Artur\Documents\Visual Studio 2015\Projects\Zaklady\ZakladySportowe\Zaklady\bin\System.Web.Razor.xml
+C:\Users\Artur\Documents\Visual Studio 2015\Projects\Zaklady\ZakladySportowe\Zaklady\bin\System.Web.WebPages.xml
+C:\Users\Artur\Documents\Visual Studio 2015\Projects\Zaklady\ZakladySportowe\Zaklady\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Artur\Documents\Visual Studio 2015\Projects\Zaklady\ZakladySportowe\Zaklady\bin\System.Web.WebPages.Razor.xml
+C:\Users\Artur\Documents\Visual Studio 2015\Projects\Zaklady\ZakladySportowe\Zaklady\bin\Antlr3.Runtime.pdb
+C:\Users\Artur\Documents\Visual Studio 2015\Projects\Zaklady\ZakladySportowe\Zaklady\bin\Newtonsoft.Json.xml
+C:\Users\Artur\Documents\Visual Studio 2015\Projects\Zaklady\ZakladySportowe\Zaklady\bin\EntityFramework.xml
+C:\Users\Artur\Documents\Visual Studio 2015\Projects\Zaklady\ZakladySportowe\Zaklady\bin\EntityFramework.SqlServer.xml
+C:\Users\Artur\Documents\Visual Studio 2015\Projects\Zaklady\ZakladySportowe\Zaklady\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\Artur\Documents\Visual Studio 2015\Projects\Zaklady\ZakladySportowe\Zaklady\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\Artur\Documents\Visual Studio 2015\Projects\Zaklady\ZakladySportowe\Zaklady\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\Artur\Documents\Visual Studio 2015\Projects\Zaklady\ZakladySportowe\Zaklady\bin\Microsoft.Owin.xml
+C:\Users\Artur\Documents\Visual Studio 2015\Projects\Zaklady\ZakladySportowe\Zaklady\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\Artur\Documents\Visual Studio 2015\Projects\Zaklady\ZakladySportowe\Zaklady\bin\Microsoft.Owin.Security.xml
+C:\Users\Artur\Documents\Visual Studio 2015\Projects\Zaklady\ZakladySportowe\Zaklady\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\Artur\Documents\Visual Studio 2015\Projects\Zaklady\ZakladySportowe\Zaklady\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\Artur\Documents\Visual Studio 2015\Projects\Zaklady\ZakladySportowe\Zaklady\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\Artur\Documents\Visual Studio 2015\Projects\Zaklady\ZakladySportowe\Zaklady\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\Artur\Documents\Visual Studio 2015\Projects\Zaklady\ZakladySportowe\Zaklady\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\Artur\Documents\Visual Studio 2015\Projects\Zaklady\ZakladySportowe\Zaklady\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\Artur\Documents\Visual Studio 2015\Projects\Zaklady\ZakladySportowe\Zaklady\obj\Debug\Zaklady.csprojResolveAssemblyReference.cache
+C:\Users\Artur\Documents\Visual Studio 2015\Projects\Zaklady\ZakladySportowe\Zaklady\obj\Debug\Zaklady.Migrations.InitialMigration.resources
+C:\Users\Artur\Documents\Visual Studio 2015\Projects\Zaklady\ZakladySportowe\Zaklady\obj\Debug\Zaklady.Migrations.ExtendingModel.resources
+C:\Users\Artur\Documents\Visual Studio 2015\Projects\Zaklady\ZakladySportowe\Zaklady\obj\Debug\Zaklady.Migrations.AddigBet.resources
+C:\Users\Artur\Documents\Visual Studio 2015\Projects\Zaklady\ZakladySportowe\Zaklady\obj\Debug\Zaklady.Migrations.FixingMatchResultsTable.resources
+C:\Users\Artur\Documents\Visual Studio 2015\Projects\Zaklady\ZakladySportowe\Zaklady\obj\Debug\Zaklady.Migrations.FixingMatchResultsId.resources
+C:\Users\Artur\Documents\Visual Studio 2015\Projects\Zaklady\ZakladySportowe\Zaklady\obj\Debug\Zaklady.Migrations.FixingMatchResultsId1.resources
+C:\Users\Artur\Documents\Visual Studio 2015\Projects\Zaklady\ZakladySportowe\Zaklady\obj\Debug\Zaklady.Migrations.FixingModels.resources
+C:\Users\Artur\Documents\Visual Studio 2015\Projects\Zaklady\ZakladySportowe\Zaklady\obj\Debug\Zaklady.Migrations.AddingBet.resources
+C:\Users\Artur\Documents\Visual Studio 2015\Projects\Zaklady\ZakladySportowe\Zaklady\obj\Debug\Zaklady.Migrations.BuildingOneToManyRelation.resources
+C:\Users\Artur\Documents\Visual Studio 2015\Projects\Zaklady\ZakladySportowe\Zaklady\obj\Debug\Zaklady.Migrations.AddingPointsToBetModel.resources
+C:\Users\Artur\Documents\Visual Studio 2015\Projects\Zaklady\ZakladySportowe\Zaklady\obj\Debug\Zaklady.Migrations.ChangedBetsFootballMatchNameProperty.resources
+C:\Users\Artur\Documents\Visual Studio 2015\Projects\Zaklady\ZakladySportowe\Zaklady\obj\Debug\Zaklady.Migrations.TemporaryFixes.resources
+C:\Users\Artur\Documents\Visual Studio 2015\Projects\Zaklady\ZakladySportowe\Zaklady\obj\Debug\Zaklady.Migrations.TemporaryFixes1.resources
+C:\Users\Artur\Documents\Visual Studio 2015\Projects\Zaklady\ZakladySportowe\Zaklady\obj\Debug\Zaklady.Migrations.TemporaryFixes2.resources
+C:\Users\Artur\Documents\Visual Studio 2015\Projects\Zaklady\ZakladySportowe\Zaklady\obj\Debug\Zaklady.Migrations.TemporaryFixes3.resources
+C:\Users\Artur\Documents\Visual Studio 2015\Projects\Zaklady\ZakladySportowe\Zaklady\obj\Debug\Zaklady.Migrations.TemporaryFixes4.resources
+C:\Users\Artur\Documents\Visual Studio 2015\Projects\Zaklady\ZakladySportowe\Zaklady\obj\Debug\Zaklady.Migrations.RemovingPointsFromBetModel.resources
+C:\Users\Artur\Documents\Visual Studio 2015\Projects\Zaklady\ZakladySportowe\Zaklady\obj\Debug\Zaklady.Migrations.AddNameToApplicationUser.resources
+C:\Users\Artur\Documents\Visual Studio 2015\Projects\Zaklady\ZakladySportowe\Zaklady\obj\Debug\Zaklady.csproj.GenerateResource.Cache
+C:\Users\Artur\Documents\Visual Studio 2015\Projects\Zaklady\ZakladySportowe\Zaklady\obj\Debug\Zaklady.dll
+C:\Users\Artur\Documents\Visual Studio 2015\Projects\Zaklady\ZakladySportowe\Zaklady\obj\Debug\Zaklady.pdb
+D:\LAST WORKING _ ZAKLADY\Zaklady\bin\roslyn\csc.exe
+D:\LAST WORKING _ ZAKLADY\Zaklady\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\LAST WORKING _ ZAKLADY\Zaklady\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\LAST WORKING _ ZAKLADY\Zaklady\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\LAST WORKING _ ZAKLADY\Zaklady\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\LAST WORKING _ ZAKLADY\Zaklady\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\LAST WORKING _ ZAKLADY\Zaklady\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\LAST WORKING _ ZAKLADY\Zaklady\bin\roslyn\System.Collections.Immutable.dll
+D:\LAST WORKING _ ZAKLADY\Zaklady\bin\roslyn\System.Reflection.Metadata.dll
+D:\LAST WORKING _ ZAKLADY\Zaklady\bin\roslyn\vbc.exe
+D:\LAST WORKING _ ZAKLADY\Zaklady\bin\roslyn\VBCSCompiler.exe
+D:\LAST WORKING _ ZAKLADY\Zaklady\bin\roslyn\VBCSCompiler.exe.config
+D:\LAST WORKING _ ZAKLADY\Zaklady\bin\Zaklady.dll.config
+D:\LAST WORKING _ ZAKLADY\Zaklady\bin\Zaklady.dll
+D:\LAST WORKING _ ZAKLADY\Zaklady\bin\Zaklady.pdb
+D:\LAST WORKING _ ZAKLADY\Zaklady\bin\Antlr3.Runtime.dll
+D:\LAST WORKING _ ZAKLADY\Zaklady\bin\EntityFramework.dll
+D:\LAST WORKING _ ZAKLADY\Zaklady\bin\EntityFramework.SqlServer.dll
+D:\LAST WORKING _ ZAKLADY\Zaklady\bin\Microsoft.AspNet.Identity.Core.dll
+D:\LAST WORKING _ ZAKLADY\Zaklady\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\LAST WORKING _ ZAKLADY\Zaklady\bin\Microsoft.AspNet.Identity.Owin.dll
+D:\LAST WORKING _ ZAKLADY\Zaklady\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\LAST WORKING _ ZAKLADY\Zaklady\bin\Microsoft.Owin.dll
+D:\LAST WORKING _ ZAKLADY\Zaklady\bin\Microsoft.Owin.Host.SystemWeb.dll
+D:\LAST WORKING _ ZAKLADY\Zaklady\bin\Microsoft.Owin.Security.Cookies.dll
+D:\LAST WORKING _ ZAKLADY\Zaklady\bin\Microsoft.Owin.Security.dll
+D:\LAST WORKING _ ZAKLADY\Zaklady\bin\Microsoft.Owin.Security.Facebook.dll
+D:\LAST WORKING _ ZAKLADY\Zaklady\bin\Microsoft.Owin.Security.Google.dll
+D:\LAST WORKING _ ZAKLADY\Zaklady\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+D:\LAST WORKING _ ZAKLADY\Zaklady\bin\Microsoft.Owin.Security.OAuth.dll
+D:\LAST WORKING _ ZAKLADY\Zaklady\bin\Microsoft.Owin.Security.Twitter.dll
+D:\LAST WORKING _ ZAKLADY\Zaklady\bin\Microsoft.Web.Infrastructure.dll
+D:\LAST WORKING _ ZAKLADY\Zaklady\bin\Newtonsoft.Json.dll
+D:\LAST WORKING _ ZAKLADY\Zaklady\bin\Owin.dll
+D:\LAST WORKING _ ZAKLADY\Zaklady\bin\PagedList.dll
+D:\LAST WORKING _ ZAKLADY\Zaklady\bin\PagedList.Mvc.dll
+D:\LAST WORKING _ ZAKLADY\Zaklady\bin\System.Web.Helpers.dll
+D:\LAST WORKING _ ZAKLADY\Zaklady\bin\System.Web.Mvc.dll
+D:\LAST WORKING _ ZAKLADY\Zaklady\bin\System.Web.Optimization.dll
+D:\LAST WORKING _ ZAKLADY\Zaklady\bin\System.Web.Razor.dll
+D:\LAST WORKING _ ZAKLADY\Zaklady\bin\System.Web.WebPages.Deployment.dll
+D:\LAST WORKING _ ZAKLADY\Zaklady\bin\System.Web.WebPages.dll
+D:\LAST WORKING _ ZAKLADY\Zaklady\bin\System.Web.WebPages.Razor.dll
+D:\LAST WORKING _ ZAKLADY\Zaklady\bin\WebGrease.dll
+D:\LAST WORKING _ ZAKLADY\Zaklady\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\LAST WORKING _ ZAKLADY\Zaklady\bin\PagedList.xml
+D:\LAST WORKING _ ZAKLADY\Zaklady\bin\PagedList.Mvc.xml
+D:\LAST WORKING _ ZAKLADY\Zaklady\bin\System.Web.Helpers.xml
+D:\LAST WORKING _ ZAKLADY\Zaklady\bin\System.Web.Mvc.xml
+D:\LAST WORKING _ ZAKLADY\Zaklady\bin\System.Web.Optimization.xml
+D:\LAST WORKING _ ZAKLADY\Zaklady\bin\System.Web.Razor.xml
+D:\LAST WORKING _ ZAKLADY\Zaklady\bin\System.Web.WebPages.xml
+D:\LAST WORKING _ ZAKLADY\Zaklady\bin\System.Web.WebPages.Deployment.xml
+D:\LAST WORKING _ ZAKLADY\Zaklady\bin\System.Web.WebPages.Razor.xml
+D:\LAST WORKING _ ZAKLADY\Zaklady\bin\Antlr3.Runtime.pdb
+D:\LAST WORKING _ ZAKLADY\Zaklady\bin\Newtonsoft.Json.xml
+D:\LAST WORKING _ ZAKLADY\Zaklady\bin\EntityFramework.xml
+D:\LAST WORKING _ ZAKLADY\Zaklady\bin\EntityFramework.SqlServer.xml
+D:\LAST WORKING _ ZAKLADY\Zaklady\bin\Microsoft.AspNet.Identity.Core.xml
+D:\LAST WORKING _ ZAKLADY\Zaklady\bin\Microsoft.AspNet.Identity.Owin.xml
+D:\LAST WORKING _ ZAKLADY\Zaklady\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\LAST WORKING _ ZAKLADY\Zaklady\bin\Microsoft.Owin.xml
+D:\LAST WORKING _ ZAKLADY\Zaklady\bin\Microsoft.Owin.Host.SystemWeb.xml
+D:\LAST WORKING _ ZAKLADY\Zaklady\bin\Microsoft.Owin.Security.xml
+D:\LAST WORKING _ ZAKLADY\Zaklady\bin\Microsoft.Owin.Security.Facebook.xml
+D:\LAST WORKING _ ZAKLADY\Zaklady\bin\Microsoft.Owin.Security.Cookies.xml
+D:\LAST WORKING _ ZAKLADY\Zaklady\bin\Microsoft.Owin.Security.OAuth.xml
+D:\LAST WORKING _ ZAKLADY\Zaklady\bin\Microsoft.Owin.Security.Google.xml
+D:\LAST WORKING _ ZAKLADY\Zaklady\bin\Microsoft.Owin.Security.Twitter.xml
+D:\LAST WORKING _ ZAKLADY\Zaklady\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+D:\LAST WORKING _ ZAKLADY\Zaklady\obj\Debug\Zaklady.csprojResolveAssemblyReference.cache
+D:\LAST WORKING _ ZAKLADY\Zaklady\obj\Debug\Zaklady.Migrations.InitialMigration.resources
+D:\LAST WORKING _ ZAKLADY\Zaklady\obj\Debug\Zaklady.Migrations.ExtendingModel.resources
+D:\LAST WORKING _ ZAKLADY\Zaklady\obj\Debug\Zaklady.Migrations.AddigBet.resources
+D:\LAST WORKING _ ZAKLADY\Zaklady\obj\Debug\Zaklady.Migrations.FixingMatchResultsTable.resources
+D:\LAST WORKING _ ZAKLADY\Zaklady\obj\Debug\Zaklady.Migrations.FixingMatchResultsId.resources
+D:\LAST WORKING _ ZAKLADY\Zaklady\obj\Debug\Zaklady.Migrations.FixingMatchResultsId1.resources
+D:\LAST WORKING _ ZAKLADY\Zaklady\obj\Debug\Zaklady.Migrations.FixingModels.resources
+D:\LAST WORKING _ ZAKLADY\Zaklady\obj\Debug\Zaklady.Migrations.AddingBet.resources
+D:\LAST WORKING _ ZAKLADY\Zaklady\obj\Debug\Zaklady.Migrations.BuildingOneToManyRelation.resources
+D:\LAST WORKING _ ZAKLADY\Zaklady\obj\Debug\Zaklady.Migrations.AddingPointsToBetModel.resources
+D:\LAST WORKING _ ZAKLADY\Zaklady\obj\Debug\Zaklady.Migrations.ChangedBetsFootballMatchNameProperty.resources
+D:\LAST WORKING _ ZAKLADY\Zaklady\obj\Debug\Zaklady.Migrations.TemporaryFixes.resources
+D:\LAST WORKING _ ZAKLADY\Zaklady\obj\Debug\Zaklady.Migrations.TemporaryFixes1.resources
+D:\LAST WORKING _ ZAKLADY\Zaklady\obj\Debug\Zaklady.Migrations.TemporaryFixes2.resources
+D:\LAST WORKING _ ZAKLADY\Zaklady\obj\Debug\Zaklady.Migrations.TemporaryFixes3.resources
+D:\LAST WORKING _ ZAKLADY\Zaklady\obj\Debug\Zaklady.Migrations.TemporaryFixes4.resources
+D:\LAST WORKING _ ZAKLADY\Zaklady\obj\Debug\Zaklady.Migrations.RemovingPointsFromBetModel.resources
+D:\LAST WORKING _ ZAKLADY\Zaklady\obj\Debug\Zaklady.Migrations.AddNameToApplicationUser.resources
+D:\LAST WORKING _ ZAKLADY\Zaklady\obj\Debug\Zaklady.csproj.GenerateResource.Cache
+D:\LAST WORKING _ ZAKLADY\Zaklady\obj\Debug\Zaklady.dll
+D:\LAST WORKING _ ZAKLADY\Zaklady\obj\Debug\Zaklady.pdb
+D:\LAST WORKING _ ZAKLADY\Zaklady\obj\Debug\Zaklady.Migrations.AddingPointsProperty.resources

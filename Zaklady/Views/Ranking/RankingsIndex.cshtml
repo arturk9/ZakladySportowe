@@ -1,22 +1,22 @@
 ﻿@model Zaklady.ViewModels.UsersViewModel
-
+<h2>Najlepsi użytkownicy:</h2>
+<br /><br />
 <table class="table">
-    <tr style="background-color:black; color:lightgray">
-        <th>Imię:</th>
-        <th>Email:</th>
-        <th><center>Punkty:</center></th>
-        <th><center>Trafione dokładne wyniki:</center></th>
-        <th><center>Trafione prawidłowe rezultaty:</center></th>
+    <tr style="background-color:black; color:lightgray; width: 350px;" >
+        <th width=50>Miejsce:</th>
+        <th width=100>Imię:</th>
+        <th width=150>Email:</th>
+        <th width=50><center>Punkty:</center></th>
     </tr>
-    @foreach (var user in Model.UsersList)
+
+    @foreach (var user in Model.UsersList.OrderByDescending(m => m.UserPoints))
     {
         <tr>
+            <td><center></center></td>
             <td>@user.Name</td>
             <td>@user.Email</td>
-            <td>@user.UserPoints</td>
-            <td>@user.Email</td>
-            <td>@user.Email</td>
-</tr>
+            <td><center>@user.UserPoints</center></td>
+        </tr>
+
     }
 </table>
-

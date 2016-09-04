@@ -118,9 +118,11 @@ namespace Zaklady.Controllers
                 _context.FootballMatches.Remove(footballMatch);
                 _context.SaveChanges();
             }
-            catch {
+            catch
+            {
                 _context.FootballMatches.Remove(footballMatch);
-                _context.SaveChanges(); }
+                _context.SaveChanges();
+            }
             ;
 
             return RedirectToAction("UpcomingEvents", "FootballMatch");
@@ -139,7 +141,27 @@ namespace Zaklady.Controllers
             footballMatch.PointsForBetingExactTeamScores = viewModel.PointsForBetingExactTeamScores;
             footballMatch.PointsForBetingMatchResult = viewModel.PointsForBetingMatchResult;
 
-                _context.SaveChanges();
+            var bets = _context.Bets.Where(m => m.MatchId == footballMatch.Id).ToList();
+
+            foreach (var item in bets)
+            {
+                if (footballMatch.HomeTeamGoals == item.HomeTeamBetGoals && footballMatch.AwayTeamGoals == item.AwayTeamBetGoals)
+                    item.Points = footballMatch.PointsForBetingExactTeamScores;
+
+                else if ((
+    ((item.HomeTeamBetGoals > item.AwayTeamBetGoals) & (item.Match.AwayTeamGoals < item.Match.HomeTeamGoals))
+    | ((item.HomeTeamBetGoals == item.AwayTeamBetGoals) & (item.Match.AwayTeamGoals == item.Match.HomeTeamGoals))
+    | ((item.HomeTeamBetGoals < item.AwayTeamBetGoals) & (item.Match.AwayTeamGoals > item.Match.HomeTeamGoals))
+    )
+    & (item.HomeTeamBetGoals != item.Match.HomeTeamGoals
+    & item.AwayTeamBetGoals != item.Match.AwayTeamGoals)
+    )
+                {
+                    item.Points = footballMatch.PointsForBetingMatchResult;
+                }
+            }
+
+            _context.SaveChanges();
 
             return RedirectToAction("UpcomingEvents", "FootballMatch");
         }
@@ -148,7 +170,8 @@ namespace Zaklady.Controllers
         public ActionResult FillFootballMatchResult(int id)
         {
             var footballMatch = _context.FootballMatches.Single(g => g.Id == id);
-            var viewModel = new FootballMatchViewModel {
+            var viewModel = new FootballMatchViewModel
+            {
                 Heading = "Uzupełnij wynik meczu",
                 HomeTeam = footballMatch.HomeTeam,
                 AwayTeam = footballMatch.AwayTeam,

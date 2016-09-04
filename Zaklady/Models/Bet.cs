@@ -19,6 +19,8 @@ namespace Zaklady.Models
         [DatabaseGenerated(DatabaseGeneratedOption.None)]
         public int? MatchId { get; set; }
 
+        public int Points { get; set; }
+
         public virtual FootballMatch Match { get; set; }
         public virtual ApplicationUser User { get; set; }
     }

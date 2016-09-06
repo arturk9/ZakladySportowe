@@ -13,20 +13,20 @@ namespace Zaklady.ViewModels
         public string UserId { get; set; }
 
         [Required]
-        public int HomeTeamBetGoals { get; set; }
+        public int BetHomeTeamGoals { get; set; }
 
         [Required]
-        public int AwayTeamBetGoals { get; set; }
+        public int BetAwayTeamGoals { get; set; }
 
-        public string HomeTeam { get; set; }
+        public string HomeTeamName { get; set; }
         
-        public string AwayTeam { get; set; }
+        public string AwayTeamName { get; set; }
 
-        public int id { get; set; }
+        public int Id { get; set; }
 
         public string Action
         {
-            get { return (BetId != 0) ? "UpdateBet" : "BetAScore"; }
+            get { return (BetId != 0) ? "UpdateBetRecord" : "InsertBetRecordToDatabase"; }
         }
     }
 }

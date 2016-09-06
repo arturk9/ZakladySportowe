@@ -5,22 +5,22 @@
 <h2>@Model.Heading</h2>
 @using (Html.BeginForm(Model.Action, "FootballMatch"))
 {@Html.AntiForgeryToken()
-    @Html.HiddenFor(m => m.id)
+    @Html.HiddenFor(m => m.Id)
     <form>
         <div class="form-group">
             <label for="HomeTeam">Drużyna gospodarzy:</label>
-            @Html.TextBoxFor(m => m.HomeTeam, new { @class = "form-control", placeholder = "np. Francja" })
-            @Html.ValidationMessageFor(m => m.HomeTeam)
+            @Html.TextBoxFor(m => m.HomeTeamName, new { @class = "form-control", placeholder = "np. Francja" })
+            @Html.ValidationMessageFor(m => m.HomeTeamName)
         </div>
         <div class="form-group">
             <label for="AwayTeam">Drużyna gości:</label>
-            @Html.TextBoxFor(m => m.AwayTeam, new { @class = "form-control", placeholder = "np. Polska" })
-            @Html.ValidationMessageFor(m => m.AwayTeam)
+            @Html.TextBoxFor(m => m.AwayTeamName, new { @class = "form-control", placeholder = "np. Polska" })
+            @Html.ValidationMessageFor(m => m.AwayTeamName)
         </div>
         <div class="form-group">
             <label for="Tournament">Turniej:</label>
-            @Html.TextBoxFor(m => m.Torunament, new { @class = "form-control", placeholder = "np. EURO2016" })
-            @Html.ValidationMessageFor(m => m.Torunament)
+            @Html.TextBoxFor(m => m.TorunamentName, new { @class = "form-control", placeholder = "np. EURO2016" })
+            @Html.ValidationMessageFor(m => m.TorunamentName)
         </div>
         <div class="form-group">
             <label for="Tournament">Godzina:</label>

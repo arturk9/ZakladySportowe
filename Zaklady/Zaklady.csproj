@@ -261,6 +261,10 @@
     <Compile Include="Migrations\201609031825332_AddingPointsProperty.Designer.cs">
       <DependentUpon>201609031825332_AddingPointsProperty.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201609041110231_RefactoringPropertiesNames.cs" />
+    <Compile Include="Migrations\201609041110231_RefactoringPropertiesNames.Designer.cs">
+      <DependentUpon>201609041110231_RefactoringPropertiesNames.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\ApplicationDbContext.cs" />
@@ -272,7 +276,6 @@
     <Compile Include="Startup.cs" />
     <Compile Include="ViewModels\BetViewModel.cs" />
     <Compile Include="ViewModels\FootballMatchViewModel.cs" />
-    <Compile Include="ViewModels\RankingViewModel.cs" />
     <Compile Include="ViewModels\UsersViewModel.cs" />
     <Compile Include="ViewModels\ValidTimeAttribute.cs" />
   </ItemGroup>
@@ -437,6 +440,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201609031825332_AddingPointsProperty.resx">
       <DependentUpon>201609031825332_AddingPointsProperty.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201609041110231_RefactoringPropertiesNames.resx">
+      <DependentUpon>201609041110231_RefactoringPropertiesNames.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

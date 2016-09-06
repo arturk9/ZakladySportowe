@@ -357,3 +357,4 @@ table tr td:first-child::before {
 table tr:first-child +tr { background-color: gold; }
 
 tr:first-child + tr +tr { background-color: silver;}
+

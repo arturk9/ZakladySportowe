@@ -6,14 +6,14 @@
 {<h3>Przewidywany wynik meczu:</h3>
     <form>
         <div class="form-group">
-            <b>@Model.HomeTeam:</b>
-            @Html.TextBoxFor(m => m.HomeTeamBetGoals, new { @class = "form-control", placeholder = "0" })
-            @Html.ValidationMessageFor(m => m.HomeTeamBetGoals)
+            <b>@Model.HomeTeamName:</b>
+            @Html.TextBoxFor(m => m.BetHomeTeamGoals, new { @class = "form-control", placeholder = "0" })
+            @Html.ValidationMessageFor(m => m.BetHomeTeamGoals)
         </div>
         <div class="form-group">
-            <b>@Model.AwayTeam:</b>
-            @Html.TextBoxFor(m => m.AwayTeamBetGoals, new { @class = "form-control", placeholder = "0" })
-            @Html.ValidationMessageFor(m => m.AwayTeamBetGoals)
+            <b>@Model.AwayTeamName:</b>
+            @Html.TextBoxFor(m => m.BetAwayTeamGoals, new { @class = "form-control", placeholder = "0" })
+            @Html.ValidationMessageFor(m => m.BetAwayTeamGoals)
         </div>
         @Html.HiddenFor(m => m.MatchId, new { @class = "form-control" })
             <button type="submit" class="btn btn-primary">Save</button>

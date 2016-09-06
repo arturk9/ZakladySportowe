@@ -9,11 +9,11 @@ namespace Zaklady.Models
 
         public string UserId { get; set; }
 
-        public string Torunament { get; set; }
+        public string TorunamentName { get; set; }
 
-        public string HomeTeam { get; set; }
+        public string HomeTeamName { get; set; }
 
-        public string AwayTeam { get; set; }
+        public string AwayTeamName { get; set; }
 
         public DateTime DateTime { get; set; }
 
@@ -21,9 +21,9 @@ namespace Zaklady.Models
 
         public int AwayTeamGoals { get; set; }
 
-        public int PointsForBetingExactTeamScores { get; set; }
+        public int PointsForBettingExactTeamScores { get; set; }
 
-        public int PointsForBetingMatchResult { get; set; }
+        public int PointsForBettingCorrectMatchResult { get; set; }
 
 
         public virtual ICollection<Bet> Bets { get; set; }

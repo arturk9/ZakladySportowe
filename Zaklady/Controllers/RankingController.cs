@@ -7,7 +7,7 @@ namespace Zaklady.Controllers
 {
     public class RankingController : Controller
     {
-        private ApplicationDbContext _context;
+        private readonly ApplicationDbContext _context;
 
         public RankingController()
         {
@@ -17,14 +17,14 @@ namespace Zaklady.Controllers
         public ActionResult RankingsIndex()
         {
             var usersList = _context.Users.ToList();
-            var BetsList = _context.Bets.ToList();
+            var betsList = _context.Bets.ToList();
 
             var usersViewModel = new UsersViewModel
             {
                 UsersList = usersList
             };
 
-            usersViewModel.SetUsersPoints(usersList, BetsList);
+            usersViewModel.SetUsersPoints(usersList, betsList);
 
             return View(usersViewModel);
         }

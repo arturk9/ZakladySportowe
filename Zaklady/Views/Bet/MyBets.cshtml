@@ -1,5 +1,4 @@
-﻿
-@model IEnumerable<Zaklady.Models.Bet>
+﻿@model IEnumerable<Zaklady.Models.Bet>
 @{
     ViewBag.Title = "Home Page";
 }
@@ -21,11 +20,11 @@
         {
             <tr style="background-color:lightgray">
                 <td><center>@footballMatch.Match.DateTime.ToString("yyyy/MM/dd HH:mm")</center></td>
-                <td><center>@footballMatch.Match.AwayTeam</center></td>
-                <td><center>@footballMatch.Match.HomeTeam</center></td>
-                <td><center>@footballMatch.AwayTeamBetGoals</center></td>
-                <td><center>@footballMatch.HomeTeamBetGoals</center></td>
-                <td><a href="@Url.Action("EditBet", "Bet", new { id = footballMatch.BetId })">Edytuj</a></td>
+                <td><center>@footballMatch.Match.AwayTeamName</center></td>
+                <td><center>@footballMatch.Match.HomeTeamName</center></td>
+                <td><center>@footballMatch.BetAwayTeamGoals</center></td>
+                <td><center>@footballMatch.BetHomeTeamGoals</center></td>
+                <td><a href="@Url.Action("PopulateEditBetForm", "Bet", new { id = footballMatch.BetId })">Edytuj</a></td>
             </tr>
         }
     }
@@ -50,40 +49,40 @@
     {
         if (footballMatch.Match.DateTime < DateTime.Now)
         {
-            if (footballMatch.HomeTeamBetGoals == footballMatch.Match.HomeTeamGoals
-                && footballMatch.AwayTeamBetGoals == footballMatch.Match.AwayTeamGoals)
+            if (footballMatch.BetHomeTeamGoals == footballMatch.Match.HomeTeamGoals
+                && footballMatch.BetAwayTeamGoals == footballMatch.Match.AwayTeamGoals)
             {
                 <tr class="success">
                     <td>@footballMatch.Match.DateTime.ToString("yyyy/MM/dd HH:mm")</td>
-                    <td>@footballMatch.Match.AwayTeam</td>
-                    <td>@footballMatch.Match.HomeTeam</td>
+                    <td>@footballMatch.Match.AwayTeamName</td>
+                    <td>@footballMatch.Match.HomeTeamName</td>
                     <td><center>@footballMatch.Match.AwayTeamGoals</center></td>
                     <td><center>@footballMatch.Match.HomeTeamGoals</center></td>
-                    <td><center>@footballMatch.AwayTeamBetGoals</center></td>
-                    <td><center>@footballMatch.HomeTeamBetGoals</center></td>
-                    <td><center>@footballMatch.Match.PointsForBetingExactTeamScores</center></td>
+                    <td><center>@footballMatch.BetAwayTeamGoals</center></td>
+                    <td><center>@footballMatch.BetHomeTeamGoals</center></td>
+                    <td><center>@footballMatch.Match.PointsForBettingExactTeamScores</center></td>
                 </tr>
             }
 
             else if (
                 (
-                ((footballMatch.HomeTeamBetGoals > footballMatch.AwayTeamBetGoals) & (footballMatch.Match.AwayTeamGoals < footballMatch.Match.HomeTeamGoals))
-                | ((footballMatch.HomeTeamBetGoals == footballMatch.AwayTeamBetGoals) & (footballMatch.Match.AwayTeamGoals == footballMatch.Match.HomeTeamGoals))
-                | ((footballMatch.HomeTeamBetGoals < footballMatch.AwayTeamBetGoals) & (footballMatch.Match.AwayTeamGoals > footballMatch.Match.HomeTeamGoals))
+                ((footballMatch.BetHomeTeamGoals > footballMatch.BetAwayTeamGoals) & (footballMatch.Match.AwayTeamGoals < footballMatch.Match.HomeTeamGoals))
+                | ((footballMatch.BetHomeTeamGoals == footballMatch.BetAwayTeamGoals) & (footballMatch.Match.AwayTeamGoals == footballMatch.Match.HomeTeamGoals))
+                | ((footballMatch.BetHomeTeamGoals < footballMatch.BetAwayTeamGoals) & (footballMatch.Match.AwayTeamGoals > footballMatch.Match.HomeTeamGoals))
                 )        
-                & (footballMatch.HomeTeamBetGoals != footballMatch.Match.HomeTeamGoals
-                &  footballMatch.AwayTeamBetGoals != footballMatch.Match.AwayTeamGoals)
+                & (footballMatch.BetHomeTeamGoals != footballMatch.Match.HomeTeamGoals
+                &  footballMatch.BetAwayTeamGoals != footballMatch.Match.AwayTeamGoals)
                 )
             {
                 <tr class="info">
                     <td>@footballMatch.Match.DateTime.ToString("yyyy/MM/dd HH:mm")</td>
-                    <td>@footballMatch.Match.AwayTeam</td>
-                    <td>@footballMatch.Match.HomeTeam</td>
+                    <td>@footballMatch.Match.AwayTeamName</td>
+                    <td>@footballMatch.Match.HomeTeamName</td>
                     <td><center>@footballMatch.Match.AwayTeamGoals</center></td>
                     <td><center>@footballMatch.Match.HomeTeamGoals</center></td>
-                    <td><center>@footballMatch.AwayTeamBetGoals</center></td>
-                    <td><center>@footballMatch.HomeTeamBetGoals</center></td>
-                    <td><center>@footballMatch.Match.PointsForBetingMatchResult</center></td>
+                    <td><center>@footballMatch.BetAwayTeamGoals</center></td>
+                    <td><center>@footballMatch.BetHomeTeamGoals</center></td>
+                    <td><center>@footballMatch.Match.PointsForBettingCorrectMatchResult</center></td>
                 </tr>
             }
 
@@ -91,12 +90,12 @@
             {
                 <tr class="danger">
                     <td>@footballMatch.Match.DateTime.ToString("yyyy/MM/dd HH:mm")</td>
-                    <td>@footballMatch.Match.AwayTeam</td>
-                    <td>@footballMatch.Match.HomeTeam</td>
+                    <td>@footballMatch.Match.AwayTeamName</td>
+                    <td>@footballMatch.Match.HomeTeamName</td>
                     <td><center>@footballMatch.Match.AwayTeamGoals</center></td>
                     <td><center>@footballMatch.Match.HomeTeamGoals</center></td>
-                    <td><center>@footballMatch.AwayTeamBetGoals</center></td>
-                    <td><center>@footballMatch.HomeTeamBetGoals</center></td>
+                    <td><center>@footballMatch.BetAwayTeamGoals</center></td>
+                    <td><center>@footballMatch.BetHomeTeamGoals</center></td>
                     <td><center>0</center></td>
                 </tr>
             }

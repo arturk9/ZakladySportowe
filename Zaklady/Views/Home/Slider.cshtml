@@ -165,20 +165,20 @@
                         </div>
                         <div class="details">
                             <span class="hometeam">
-                                @footballMatch.HomeTeam
+                                @footballMatch.HomeTeamName
                             </span>
                             vs.
                             <span class="genre">
-                                @footballMatch.AwayTeam
+                                @footballMatch.AwayTeamName
                             </span>
                             <span class="hour">
                                 @footballMatch.DateTime.ToString("HH:mm")
                             </span>
                             <span class="tournament">
-                                @footballMatch.Torunament
+                                @footballMatch.TorunamentName
                             </span>
                             <span class="button">
-                                <button class="btn btn-primary btn-sm" onclick="location.href='@Url.Action("AddBet", "Bet", new {id = footballMatch.Id})'">Obstaw</button>
+                                <button class="btn btn-primary btn-sm" onclick="location.href = '@Url.Action("PopulateBetForm", "Bet", new {id = footballMatch.Id})'">Obstaw</button>
                             </span>
                         </div>
                     </li>
@@ -202,17 +202,17 @@
                         </div>
                         <div class="details">
                             <span class="hometeam">
-                                @footballMatch.HomeTeam
+                                @footballMatch.HomeTeamName
                             </span>
                             @footballMatch.HomeTeamGoals : @footballMatch.AwayTeamGoals
                             <span class="genre">
-                                @footballMatch.AwayTeam
+                                @footballMatch.AwayTeamName
                             </span>
                             <span class="hour">
                                 @footballMatch.DateTime.ToString("HH:mm")
                             </span>
                             <span class="tournament">
-                                @footballMatch.Torunament
+                                @footballMatch.TorunamentName
                             </span>
                         </div>
                     </li>

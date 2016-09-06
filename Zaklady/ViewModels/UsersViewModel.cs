@@ -7,13 +7,13 @@ namespace Zaklady.ViewModels
     {
         public List<ApplicationUser> UsersList;
 
-        public void SetUsersPoints(IEnumerable<ApplicationUser> UsersList, IEnumerable<Bet> BetsList)
+        public void SetUsersPoints(IEnumerable<ApplicationUser> usersList, IEnumerable<Bet> betsList)
         {
-            foreach (var user in UsersList)
+            foreach (var user in usersList)
             {
                 user.UserPoints = 0;
 
-                foreach (var bet in BetsList)
+                foreach (var bet in betsList)
                 {
                     if (user.Id == bet.UserId)
                     {

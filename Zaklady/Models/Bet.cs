@@ -11,10 +11,10 @@ namespace Zaklady.Models
         public string UserId { get; set; }
 
         [Required]
-        public int HomeTeamBetGoals { get; set; }
+        public int BetHomeTeamGoals { get; set; }
 
         [Required]
-        public int AwayTeamBetGoals { get; set; }
+        public int BetAwayTeamGoals { get; set; }
 
         [DatabaseGenerated(DatabaseGeneratedOption.None)]
         public int? MatchId { get; set; }

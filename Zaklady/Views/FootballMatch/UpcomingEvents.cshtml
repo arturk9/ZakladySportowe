@@ -25,27 +25,27 @@
                     </div>
                     <div class="details">
                         <span class="hometeam">
-                            @footballMatch.HomeTeam
+                            @footballMatch.HomeTeamName
                         </span>
                         vs.
                         <span class="genre">
-                            @footballMatch.AwayTeam
+                            @footballMatch.AwayTeamName
                         </span>
                         <span class="hour">
                             @footballMatch.DateTime.ToString("HH:mm")
                         </span>
                         <span class="tournament">
-                            @footballMatch.Torunament
+                            @footballMatch.TorunamentName
                         </span>
                         <span class="button">
-                            <button class="btn btn-primary btn-sm" onclick="location.href='@Url.Action("AddBet", "Bet", new { id = footballMatch.Id })'">Obstaw</button>
+                            <button class="btn btn-primary btn-sm" onclick="location.href = '@Url.Action("PopulateBetForm", "Bet", new { id = footballMatch.Id })'">Obstaw</button>
                         </span>
                         <div class="actions">
                             <a href="@Url.Action("EditFootballMatch", "FootballMatch", new { id = footballMatch.Id })">Edytuj</a>
                             |
-                            <a href="@Url.Action("RemoveFootballMatchConfrimation", "FootballMatch", new { id = footballMatch.Id })">Usuń</a>
+                            <a href="@Url.Action("FootballMatchRemovalConfirmation", "FootballMatch", new { id = footballMatch.Id })">Usuń</a>
                             |
-                            <a href="@Url.Action("FillFootballMatchResult", "FootballMatch", new { id = footballMatch.Id })">Dodaj wynik</a>
+                            <a href="@Url.Action("AddFootballMatchResult", "FootballMatch", new { id = footballMatch.Id })">Dodaj wynik</a>
                         </div>
                     </div>
                 </li>

@@ -5,27 +5,27 @@
 <h2>@Model.Heading</h2>
 @using (Html.BeginForm("AddFootballMatchResult", "FootballMatch"))
 {@Html.AntiForgeryToken()
-    @Html.HiddenFor(m => m.id)
+    @Html.HiddenFor(m => m.Id)
     <form>
         <div class="form-group">
-            <b>@Model.HomeTeam:</b>
+            <b>@Model.HomeTeamName:</b>
             @Html.TextBoxFor(m => m.HomeTeamGoals, new { @class = "form-control", placeholder = "np. 0" })
             @Html.ValidationMessageFor(m => m.HomeTeamGoals)
         </div>
         <div class="form-group">
-            <b>@Model.AwayTeam:</b>
+            <b>@Model.AwayTeamName:</b>
             @Html.TextBoxFor(m => m.AwayTeamGoals, new { @class = "form-control", placeholder = "np. 3" })
             @Html.ValidationMessageFor(m => m.AwayTeamGoals)
 </div>
         <div class="form-group">
             <label for="Tournament">Punkty za prawidłowy rezultat:</label>
-            @Html.TextBoxFor(m => m.PointsForBetingMatchResult, new { @class = "form-control", placeholder = "np. 1" })
-            @Html.ValidationMessageFor(m => m.PointsForBetingMatchResult)
+            @Html.TextBoxFor(m => m.PointsForBettingCorrectMatchResult, new { @class = "form-control", placeholder = "np. 1" })
+            @Html.ValidationMessageFor(m => m.PointsForBettingCorrectMatchResult)
         </div>
         <div class="form-group">
             <label for="Tournament">Punkty za dokładną liczbę bramek:</label>
-            @Html.TextBoxFor(m => m.PointsForBetingExactTeamScores, new { @class = "form-control", placeholder = "np. 3" })
-            @Html.ValidationMessageFor(m => m.PointsForBetingExactTeamScores)
+            @Html.TextBoxFor(m => m.PointsForBettingExactTeamScores, new { @class = "form-control", placeholder = "np. 3" })
+            @Html.ValidationMessageFor(m => m.PointsForBettingExactTeamScores)
         </div>
         <button type="submit" class="btn btn-primary">Save</button>
     </form>

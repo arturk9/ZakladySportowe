@@ -6,13 +6,13 @@ namespace Zaklady.ViewModels
     public class FootballMatchViewModel
     {
         [Required]
-        public string Torunament { get; set; }
+        public string TorunamentName { get; set; }
 
         [Required]
-        public string HomeTeam { get; set; }
+        public string HomeTeamName { get; set; }
 
         [Required]
-        public string AwayTeam { get; set; }
+        public string AwayTeamName { get; set; }
 
         [Required]
         public string Date { get; set; }
@@ -26,11 +26,11 @@ namespace Zaklady.ViewModels
             return DateTime.Parse(string.Format("{0} {1}", Date, Time));
         }
 
-        public int id { get; set; }
+        public int Id { get; set; }
 
         public string Action
         {
-            get { return (id != 0) ? "UpdateFootballMatch" : "CreateFootballMatch"; }
+            get { return (Id != 0) ? "UpdateFootballMatchDatabaseRecord" : "InsertFootballMatchRecord"; }
         }
 
         public string Heading { get; set; }
@@ -42,9 +42,9 @@ namespace Zaklady.ViewModels
         public int AwayTeamGoals { get; set; }
 
         [Required]
-        public int PointsForBetingExactTeamScores { get; set; }
+        public int PointsForBettingExactTeamScores { get; set; }
 
         [Required]
-        public int PointsForBetingMatchResult { get; set; }
+        public int PointsForBettingCorrectMatchResult { get; set; }
     }
 }

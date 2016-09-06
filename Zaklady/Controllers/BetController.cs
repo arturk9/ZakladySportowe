@@ -17,7 +17,7 @@ namespace Zaklady.Controllers
         }
 
         [Authorize]
-        public ActionResult AddBet(int id)
+        public ActionResult PopulateBetForm(int id)
         {
             var footballMatch = _context.FootballMatches.Single(g => g.Id == id);
             var userId = User.Identity.GetUserId();
@@ -27,15 +27,15 @@ namespace Zaklady.Controllers
                 .Where(m => m.MatchId == id)
                 .Where(m => m.UserId == userId)
                 .ToList()
-                .Count() == 0
+                .Any()//wczesniej bylo count=0
                 )
             {
                 var viewModel = new BetViewModel
                 {
                     MatchId = footballMatch.Id,
                     UserId = footballMatch.UserId,
-                    HomeTeam = footballMatch.HomeTeam,
-                    AwayTeam = footballMatch.AwayTeam
+                    HomeTeamName = footballMatch.HomeTeamName,
+                    AwayTeamName = footballMatch.AwayTeamName
                 };
 
                 return View("BetForm", viewModel);
@@ -47,21 +47,57 @@ namespace Zaklady.Controllers
         }
 
         [Authorize]
-        public ActionResult BetAScore(BetViewModel viewModel)
+        public ActionResult InsertBetRecordToDatabase(BetViewModel viewModel)
         {
-            var Bet = new Bet
+            var bet = new Bet
             {
                 MatchId = viewModel.MatchId,
                 UserId = User.Identity.GetUserId(),
-                HomeTeamBetGoals = viewModel.HomeTeamBetGoals,
-                AwayTeamBetGoals = viewModel.AwayTeamBetGoals
+                BetHomeTeamGoals = viewModel.BetHomeTeamGoals,
+                BetAwayTeamGoals = viewModel.BetAwayTeamGoals
 
             };
 
-            _context.Bets.Add(Bet);
+            _context.Bets.Add(bet);
             _context.SaveChanges();
 
             return RedirectToAction("MyBets", "Bet");
+        }
+
+        [Authorize]
+        [HttpPost]
+        public ActionResult UpdateBetRecord(BetViewModel viewModel)
+        {
+            /*if (!ModelState.IsValid)
+            {
+                return View("FootballMatchForm", viewModel);
+            }*/
+
+            var bet = _context.Bets.Single(g => g.BetId == viewModel.BetId);
+
+            bet.BetHomeTeamGoals = viewModel.BetHomeTeamGoals;
+            bet.BetAwayTeamGoals = viewModel.BetAwayTeamGoals;
+
+            _context.SaveChanges();
+
+            return RedirectToAction("MyBets", "Bet");
+        }
+
+        public ActionResult PopulateEditBetForm(int id)
+        {
+            var bet = _context.Bets
+                .Include(g => g.Match)
+                .Single(g => g.BetId == id);
+
+            var viewModel = new BetViewModel
+            {
+                HomeTeamName = bet.Match.HomeTeamName,
+                AwayTeamName = bet.Match.AwayTeamName,
+                BetAwayTeamGoals = bet.BetAwayTeamGoals,
+                BetHomeTeamGoals = bet.BetHomeTeamGoals
+            };
+
+            return View("BetForm", viewModel);
         }
 
         [Authorize]
@@ -76,42 +112,6 @@ namespace Zaklady.Controllers
                 .ToList();
 
             return View(bets);
-        }
-
-        [Authorize]
-        [HttpPost]
-        public ActionResult UpdateBet(BetViewModel viewModel)
-        {
-            /*if (!ModelState.IsValid)
-            {
-                return View("FootballMatchForm", viewModel);
-            }*/
-
-            var bet = _context.Bets.Single(g => g.BetId == viewModel.BetId);
-
-            bet.HomeTeamBetGoals = viewModel.HomeTeamBetGoals;
-            bet.AwayTeamBetGoals = viewModel.AwayTeamBetGoals;
-
-            _context.SaveChanges();
-
-            return RedirectToAction("MyBets", "Bet");
-        }
-
-        public ActionResult EditBet(int id)
-        {
-            var bet = _context.Bets
-                .Include(g => g.Match)
-                .Single(g => g.BetId == id);
-
-            var viewModel = new BetViewModel
-            {
-                HomeTeam = bet.Match.HomeTeam,
-                AwayTeam = bet.Match.AwayTeam,
-                AwayTeamBetGoals = bet.AwayTeamBetGoals,
-                HomeTeamBetGoals = bet.HomeTeamBetGoals
-            };
-
-            return View("BetForm", viewModel);
         }
     }
 }

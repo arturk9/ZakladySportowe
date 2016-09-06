@@ -3,9 +3,9 @@
     ViewBag.Title = "DeleteBetConfirmation";
 }
 
-@using (Html.BeginForm("RemoveFootballMatch", "FootballMatch"))
+@using (Html.BeginForm("RemoveFootballMatchRecord", "FootballMatch"))
 {
-    @Html.HiddenFor(m => m.id)
+    @Html.HiddenFor(m => m.Id)
     <center>
        <div class="panel panel-danger">
             
@@ -13,7 +13,7 @@
             <br />
             <h4>Usunięcie spowoduje nieodwracalne zmiany. Czy jesteś pewien, że chcesz usunąć mecz:</h4>
             <br>
-            <h4> @Model.Date &emsp;&emsp;&emsp;    @Model.HomeTeam - @Model.AwayTeam</h4>
+            <h4> @Model.Date &emsp;&emsp;&emsp;    @Model.HomeTeamName - @Model.AwayTeamName</h4>
             <br>
             <button type="submit" class="btn btn-danger btn-sm"><font size="3">USUŃ</font></button><p></p>
             </div>

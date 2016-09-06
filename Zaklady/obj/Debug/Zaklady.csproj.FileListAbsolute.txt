@@ -346,3 +346,4 @@ D:\LAST WORKING _ ZAKLADY\Zaklady\obj\Debug\Zaklady.csproj.GenerateResource.Cach
 D:\LAST WORKING _ ZAKLADY\Zaklady\obj\Debug\Zaklady.dll
 D:\LAST WORKING _ ZAKLADY\Zaklady\obj\Debug\Zaklady.pdb
 D:\LAST WORKING _ ZAKLADY\Zaklady\obj\Debug\Zaklady.Migrations.AddingPointsProperty.resources
+D:\LAST WORKING _ ZAKLADY\Zaklady\obj\Debug\Zaklady.Migrations.RefactoringPropertiesNames.resources

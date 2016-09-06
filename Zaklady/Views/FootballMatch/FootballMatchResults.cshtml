@@ -3,7 +3,7 @@
     ViewBag.Title = "Uzupełnij wyniki meczu";
 }
 <h2>@Model.Heading</h2>
-@using (Html.BeginForm("AddFootballMatchResult", "FootballMatch"))
+@using (Html.BeginForm("AddFootballMatchResultToDatabaseAndSetPointsForBet", "FootballMatch"))
 {@Html.AntiForgeryToken()
     @Html.HiddenFor(m => m.Id)
     <form>

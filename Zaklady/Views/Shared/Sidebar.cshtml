@@ -5,7 +5,7 @@
 
             <ul id="menu-content">
                 <li>
-                    <a href="#">
+                    <a href="@Url.Action("CreateFootballMatch", "FootballMatch")">
                         <i class="fa fa-dashboard fa-lg"></i> Strona główna
                     </a>
                 </li>
@@ -15,10 +15,10 @@
                 </li>
 
                 <ul class="sub-menu collapse" id="products">
-                    <li class="active"><a href="#">Nadchodzące</a></li>
+                    <li class="active"><a href="@Url.Action("UpcomingEvents", "FootballMatch")">Nadchodzące</a></li>
                     <li><a href="#">Ostatnio zakończone</a></li>
                     <li><a href="#">Dodane</a></li>
-                    <li><a href="#">Utwórz nowe</a></li>
+                    <li><a href="@Url.Action("CreateFootballMatch", "FootballMatch")">Dodaj</a></li>
                     <li><a href="#">Zakończ wydarzenie</a></li>
                 </ul>
 

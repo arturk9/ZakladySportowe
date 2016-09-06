@@ -129,11 +129,6 @@ namespace Zaklady.Controllers
 
         public ActionResult AddFootballMatchResultToDatabaseAndSetPointsForBet(FootballMatchViewModel viewModel)
         {
-            /*if (!ModelState.IsValid)
-            {
-                return View("FootballMatchResults", viewModel);
-            }*/
-
             /*
              * Conditional below compares users bet and real football match result
              * 

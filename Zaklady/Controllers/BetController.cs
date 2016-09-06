@@ -27,7 +27,7 @@ namespace Zaklady.Controllers
                 .Where(m => m.MatchId == id)
                 .Where(m => m.UserId == userId)
                 .ToList()
-                .Any()//wczesniej bylo count=0
+                .Count()==0
                 )
             {
                 var viewModel = new BetViewModel
@@ -68,11 +68,6 @@ namespace Zaklady.Controllers
         [HttpPost]
         public ActionResult UpdateBetRecord(BetViewModel viewModel)
         {
-            /*if (!ModelState.IsValid)
-            {
-                return View("FootballMatchForm", viewModel);
-            }*/
-
             var bet = _context.Bets.Single(g => g.BetId == viewModel.BetId);
 
             bet.BetHomeTeamGoals = viewModel.BetHomeTeamGoals;

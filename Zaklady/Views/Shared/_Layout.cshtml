@@ -29,20 +29,15 @@
         </div>
     </div>
     <div class="wrapper">
-        <aside class="aside">
-            @Html.Partial("Sidebar")
-        </aside>
-
         <aside class="main">
             @RenderBody()
         </aside>
     </div>
-
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")
     @RenderSection("scripts", required: false)
-
-    <footer class="footer">
-        <center><h6><font color="silver">Created by Artur Kulesza - ASP.NET 2016</font></h6></center>
-    </footer>
 </body>
+<footer class="footer modal-footer">
+        <center><h6><font color="silver">Created by Artur Kulesza - ASP.NET 2016</font></h6></center>
+</footer>
+
